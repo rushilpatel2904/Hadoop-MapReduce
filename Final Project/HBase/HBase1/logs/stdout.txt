@@ -1,0 +1,1 @@
+create table average_delay_airlines ok.

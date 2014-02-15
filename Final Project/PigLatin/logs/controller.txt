@@ -1,0 +1,6 @@
+2013-12-04T18:19:24.138Z INFO Fetching jar file.
+2013-12-04T18:19:31.774Z INFO Working dir /mnt/var/lib/hadoop/steps/3
+2013-12-04T18:19:31.774Z INFO Executing /usr/java/latest/bin/java -cp /home/hadoop/conf:/usr/java/latest/lib/tools.jar:/home/hadoop:/home/hadoop/hadoop-tools.jar:/home/hadoop/hadoop-tools-1.0.3.jar:/home/hadoop/hadoop-core-1.0.3.jar:/home/hadoop/hadoop-core.jar:/home/hadoop/lib/*:/home/hadoop/lib/jetty-ext/* -Xmx1000m -Dhadoop.log.dir=/mnt/var/log/hadoop/steps/3 -Dhadoop.log.file=syslog -Dhadoop.home.dir=/home/hadoop -Dhadoop.id.str=hadoop -Dhadoop.root.logger=INFO,DRFA -Djava.io.tmpdir=/mnt/var/lib/hadoop/steps/3/tmp -Djava.library.path=/home/hadoop/native/Linux-amd64-64 org.apache.hadoop.util.RunJar /mnt/var/lib/hadoop/steps/3/script-runner.jar s3://us-west-2.elasticmapreduce/libs/pig/pig-script --run-pig-script --pig-versions latest --args -p INPUT=s3n://finalproj-puru/piginput -p OUTPUT=s3n://finalproj-puru/pigoutput s3n://finalproj-puru/threelegs.pig
+2013-12-04T18:35:18.570Z INFO Execution ended with ret val 0
+2013-12-04T18:35:26.160Z INFO Step created jobs: job_201312041816_0001,job_201312041816_0002,job_201312041816_0003,job_201312041816_0004,job_201312041816_0005
+2013-12-04T18:36:01.095Z INFO Step succeeded

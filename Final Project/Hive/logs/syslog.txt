@@ -1,0 +1,1 @@
+2013-12-05 18:39:28,369 INFO org.apache.hadoop.fs.s3native.NativeS3FileSystem (main): Opening '/libs/hive/hive-script' for reading

@@ -1,0 +1,1017 @@
+2013-10-05 16:12:10,562 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting NameNode
+STARTUP_MSG:   host = Rushils-MacBook-Pro.local/192.168.1.105
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 1.2.1
+STARTUP_MSG:   build = https://svn.apache.org/repos/asf/hadoop/common/branches/branch-1.2 -r 1503152; compiled by 'mattf' on Mon Jul 22 15:23:09 PDT 2013
+STARTUP_MSG:   java = 1.6.0_51
+************************************************************/
+2013-10-05 16:12:11,000 INFO org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2013-10-05 16:12:11,061 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source MetricsSystem,sub=Stats registered.
+2013-10-05 16:12:11,063 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2013-10-05 16:12:11,063 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: NameNode metrics system started
+2013-10-05 16:12:11,349 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source ugi registered.
+2013-10-05 16:12:11,354 WARN org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Source name ugi already exists!
+2013-10-05 16:12:11,363 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source jvm registered.
+2013-10-05 16:12:11,364 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source NameNode registered.
+2013-10-05 16:12:11,400 INFO org.apache.hadoop.hdfs.util.GSet: Computing capacity for map BlocksMap
+2013-10-05 16:12:11,400 INFO org.apache.hadoop.hdfs.util.GSet: VM type       = 64-bit
+2013-10-05 16:12:11,400 INFO org.apache.hadoop.hdfs.util.GSet: 2.0% max memory = 2088435712
+2013-10-05 16:12:11,401 INFO org.apache.hadoop.hdfs.util.GSet: capacity      = 2^22 = 4194304 entries
+2013-10-05 16:12:11,401 INFO org.apache.hadoop.hdfs.util.GSet: recommended=4194304, actual=4194304
+2013-10-05 16:12:11,437 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: fsOwner=rushil_345
+2013-10-05 16:12:11,437 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: supergroup=supergroup
+2013-10-05 16:12:11,437 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isPermissionEnabled=true
+2013-10-05 16:12:11,495 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.block.invalidate.limit=100
+2013-10-05 16:12:11,495 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isAccessTokenEnabled=false accessKeyUpdateInterval=0 min(s), accessTokenLifetime=0 min(s)
+2013-10-05 16:12:11,760 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Registered FSNamesystemStateMBean and NameNodeMXBean
+2013-10-05 16:12:11,782 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: dfs.namenode.edits.toleration.length = 0
+2013-10-05 16:12:11,782 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: Caching file names occuring more than 10 times 
+2013-10-05 16:12:11,814 INFO org.apache.hadoop.hdfs.server.common.Storage: Start loading image file /Users/rushil_345/Desktop/hadoop-rushil_345/dfs/name/current/fsimage
+2013-10-05 16:12:11,814 INFO org.apache.hadoop.hdfs.server.common.Storage: Number of files = 1
+2013-10-05 16:12:11,818 INFO org.apache.hadoop.hdfs.server.common.Storage: Number of files under construction = 0
+2013-10-05 16:12:11,818 INFO org.apache.hadoop.hdfs.server.common.Storage: Image file /Users/rushil_345/Desktop/hadoop-rushil_345/dfs/name/current/fsimage of size 116 bytes loaded in 0 seconds.
+2013-10-05 16:12:11,818 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Start loading edits file /Users/rushil_345/Desktop/hadoop-rushil_345/dfs/name/current/edits
+2013-10-05 16:12:11,819 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: EOF of /Users/rushil_345/Desktop/hadoop-rushil_345/dfs/name/current/edits, reached end of edit log Number of transactions found: 0.  Bytes read: 4
+2013-10-05 16:12:11,819 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Start checking end of edit log (/Users/rushil_345/Desktop/hadoop-rushil_345/dfs/name/current/edits) ...
+2013-10-05 16:12:11,819 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Checked the bytes after the end of edit log (/Users/rushil_345/Desktop/hadoop-rushil_345/dfs/name/current/edits):
+2013-10-05 16:12:11,819 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog:   Padding position  = -1 (-1 means padding not found)
+2013-10-05 16:12:11,819 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog:   Edit log length   = 4
+2013-10-05 16:12:11,819 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog:   Read length       = 4
+2013-10-05 16:12:11,819 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog:   Corruption length = 0
+2013-10-05 16:12:11,819 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog:   Toleration length = 0 (= dfs.namenode.edits.toleration.length)
+2013-10-05 16:12:11,821 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Summary: |---------- Read=4 ----------|-- Corrupt=0 --|-- Pad=0 --|
+2013-10-05 16:12:11,821 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Edits file /Users/rushil_345/Desktop/hadoop-rushil_345/dfs/name/current/edits of size 4 edits # 0 loaded in 0 seconds.
+2013-10-05 16:12:11,822 INFO org.apache.hadoop.hdfs.server.common.Storage: Image file /Users/rushil_345/Desktop/hadoop-rushil_345/dfs/name/current/fsimage of size 116 bytes saved in 0 seconds.
+2013-10-05 16:12:11,876 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: closing edit log: position=4, editlog=/Users/rushil_345/Desktop/hadoop-rushil_345/dfs/name/current/edits
+2013-10-05 16:12:11,877 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: close success: truncate to 4, editlog=/Users/rushil_345/Desktop/hadoop-rushil_345/dfs/name/current/edits
+2013-10-05 16:12:11,888 INFO org.apache.hadoop.hdfs.server.namenode.NameCache: initialized with 0 entries 0 lookups
+2013-10-05 16:12:11,888 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Finished loading FSImage in 462 msecs
+2013-10-05 16:12:11,889 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.safemode.threshold.pct          = 0.9990000128746033
+2013-10-05 16:12:11,889 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.namenode.safemode.min.datanodes = 0
+2013-10-05 16:12:11,889 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.safemode.extension              = 30000
+2013-10-05 16:12:11,889 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Number of blocks excluded by safe block count: 0 total blocks: 0 and thus the safe blocks: 0
+2013-10-05 16:12:11,899 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Total number of blocks = 0
+2013-10-05 16:12:11,899 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Number of invalid blocks = 0
+2013-10-05 16:12:11,899 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Number of under-replicated blocks = 0
+2013-10-05 16:12:11,899 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Number of  over-replicated blocks = 0
+2013-10-05 16:12:11,899 INFO org.apache.hadoop.hdfs.StateChange: STATE* Safe mode termination scan for invalid, over- and under-replicated blocks completed in 10 msec
+2013-10-05 16:12:11,899 INFO org.apache.hadoop.hdfs.StateChange: STATE* Leaving safe mode after 0 secs
+2013-10-05 16:12:11,900 INFO org.apache.hadoop.hdfs.StateChange: STATE* Network topology has 0 racks and 0 datanodes
+2013-10-05 16:12:11,900 INFO org.apache.hadoop.hdfs.StateChange: STATE* UnderReplicatedBlocks has 0 blocks
+2013-10-05 16:12:11,907 INFO org.apache.hadoop.util.HostsFileReader: Refreshing hosts (include/exclude) list
+2013-10-05 16:12:11,907 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: ReplicateQueue QueueProcessingStatistics: First cycle completed 0 blocks in 1 msec
+2013-10-05 16:12:11,907 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: ReplicateQueue QueueProcessingStatistics: Queue flush completed 0 blocks in 1 msec processing time, 1 msec clock time, 1 cycles
+2013-10-05 16:12:11,907 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: InvalidateQueue QueueProcessingStatistics: First cycle completed 0 blocks in 0 msec
+2013-10-05 16:12:11,908 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: InvalidateQueue QueueProcessingStatistics: Queue flush completed 0 blocks in 0 msec processing time, 0 msec clock time, 1 cycles
+2013-10-05 16:12:11,954 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source FSNamesystemMetrics registered.
+2013-10-05 16:12:11,994 INFO org.apache.hadoop.ipc.Server: Starting SocketReader
+2013-10-05 16:12:11,997 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source RpcDetailedActivityForPort54310 registered.
+2013-10-05 16:12:11,997 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source RpcActivityForPort54310 registered.
+2013-10-05 16:12:12,000 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: Namenode up at: localhost/127.0.0.1:54310
+2013-10-05 16:12:12,376 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2013-10-05 16:12:12,810 INFO org.apache.hadoop.http.HttpServer: Added global filtersafety (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
+2013-10-05 16:12:12,856 INFO org.apache.hadoop.http.HttpServer: dfs.webhdfs.enabled = false
+2013-10-05 16:12:12,910 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50070
+2013-10-05 16:12:12,915 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50070 webServer.getConnectors()[0].getLocalPort() returned 50070
+2013-10-05 16:12:12,915 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50070
+2013-10-05 16:12:12,915 INFO org.mortbay.log: jetty-6.1.26
+2013-10-05 16:12:13,754 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50070
+2013-10-05 16:12:13,755 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: Web-server up at: 0.0.0.0:50070
+2013-10-05 16:12:13,755 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2013-10-05 16:12:13,756 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 54310: starting
+2013-10-05 16:12:13,760 INFO org.apache.hadoop.ipc.Server: IPC Server handler 0 on 54310: starting
+2013-10-05 16:12:13,762 INFO org.apache.hadoop.ipc.Server: IPC Server handler 1 on 54310: starting
+2013-10-05 16:12:13,762 INFO org.apache.hadoop.ipc.Server: IPC Server handler 2 on 54310: starting
+2013-10-05 16:12:13,763 INFO org.apache.hadoop.ipc.Server: IPC Server handler 3 on 54310: starting
+2013-10-05 16:12:13,768 INFO org.apache.hadoop.ipc.Server: IPC Server handler 4 on 54310: starting
+2013-10-05 16:12:13,769 INFO org.apache.hadoop.ipc.Server: IPC Server handler 5 on 54310: starting
+2013-10-05 16:12:13,769 INFO org.apache.hadoop.ipc.Server: IPC Server handler 6 on 54310: starting
+2013-10-05 16:12:13,769 INFO org.apache.hadoop.ipc.Server: IPC Server handler 7 on 54310: starting
+2013-10-05 16:12:13,769 INFO org.apache.hadoop.ipc.Server: IPC Server handler 8 on 54310: starting
+2013-10-05 16:12:13,770 INFO org.apache.hadoop.ipc.Server: IPC Server handler 9 on 54310: starting
+2013-10-05 16:12:15,570 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* registerDatanode: node registration from 127.0.0.1:50010 storage DS-511143290-192.168.1.105-50010-1381003935563
+2013-10-05 16:12:15,574 INFO org.apache.hadoop.net.NetworkTopology: Adding a new node: /default-rack/127.0.0.1:50010
+2013-10-05 16:12:15,588 INFO org.apache.hadoop.hdfs.StateChange: *BLOCK* NameNode.blocksBeingWrittenReport: from 127.0.0.1:50010 0 blocks
+2013-10-05 16:12:15,609 INFO org.apache.hadoop.hdfs.StateChange: *BLOCK* processReport: from 127.0.0.1:50010, blocks: 0, processing time: 1 msecs
+2013-10-05 16:12:18,494 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* allocateBlock: /Users/rushil_345/Desktop/hadoop-rushil_345/mapred/system/jobtracker.info. blk_4377958220509453006_1001
+2013-10-05 16:12:18,621 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* addStoredBlock: blockMap updated: 127.0.0.1:50010 is added to blk_4377958220509453006_1001 size 4
+2013-10-05 16:12:18,626 INFO org.apache.hadoop.hdfs.StateChange: Removing lease on  /Users/rushil_345/Desktop/hadoop-rushil_345/mapred/system/jobtracker.info from client DFSClient_NONMAPREDUCE_-1361198834_1
+2013-10-05 16:12:18,627 INFO org.apache.hadoop.hdfs.StateChange: DIR* completeFile: /Users/rushil_345/Desktop/hadoop-rushil_345/mapred/system/jobtracker.info is closed by DFSClient_NONMAPREDUCE_-1361198834_1
+2013-10-05 16:16:12,462 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 15 Total time for transactions(ms): 1 Number of transactions batched in Syncs: 0 Number of syncs: 5 SyncTimes(ms): 83 
+2013-10-05 16:17:16,456 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Roll Edit Log from 127.0.0.1
+2013-10-05 16:17:16,456 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 15 Total time for transactions(ms): 1 Number of transactions batched in Syncs: 0 Number of syncs: 6 SyncTimes(ms): 83 
+2013-10-05 16:17:16,456 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: closing edit log: position=1434, editlog=/Users/rushil_345/Desktop/hadoop-rushil_345/dfs/name/current/edits
+2013-10-05 16:17:16,457 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: close success: truncate to 1434, editlog=/Users/rushil_345/Desktop/hadoop-rushil_345/dfs/name/current/edits
+2013-10-05 16:17:16,954 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://0.0.0.0:50090/getimage?getimage=1
+2013-10-05 16:17:17,025 INFO org.apache.hadoop.hdfs.server.namenode.GetImageServlet: Downloaded new fsimage with checksum: acd8a2e2acfaa3cf7197b07793250a7f
+2013-10-05 16:17:17,026 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Roll FSImage from 127.0.0.1
+2013-10-05 16:17:17,026 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 0 Total time for transactions(ms): 0 Number of transactions batched in Syncs: 0 Number of syncs: 1 SyncTimes(ms): 14 
+2013-10-05 16:17:17,026 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: closing edit log: position=4, editlog=/Users/rushil_345/Desktop/hadoop-rushil_345/dfs/name/current/edits.new
+2013-10-05 16:17:17,026 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: close success: truncate to 4, editlog=/Users/rushil_345/Desktop/hadoop-rushil_345/dfs/name/current/edits.new
+2013-10-05 16:17:55,946 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* allocateBlock: /user/rushil_345/input/abc.txt. blk_-1042116420399700857_1002
+2013-10-05 16:17:55,980 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* addStoredBlock: blockMap updated: 127.0.0.1:50010 is added to blk_-1042116420399700857_1002 size 135061
+2013-10-05 16:17:55,980 INFO org.apache.hadoop.hdfs.StateChange: Removing lease on  /user/rushil_345/input/abc.txt from client DFSClient_1665725833
+2013-10-05 16:17:55,981 INFO org.apache.hadoop.hdfs.StateChange: DIR* completeFile: /user/rushil_345/input/abc.txt is closed by DFSClient_1665725833
+2013-10-05 16:25:57,900 INFO org.apache.hadoop.hdfs.StateChange: *BLOCK* processReport: from 127.0.0.1:50010, blocks: 2, processing time: 0 msecs
+2013-10-05 16:33:02,400 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 6 Total time for transactions(ms): 0 Number of transactions batched in Syncs: 0 Number of syncs: 2 SyncTimes(ms): 6 
+2013-10-05 16:33:03,099 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* allocateBlock: /user/rushil_345/output/_temporary/_attempt_local1609883710_0001_r_000000_0/part-r-00000. blk_8485580292539901814_1003
+2013-10-05 16:33:03,133 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* addStoredBlock: blockMap updated: 127.0.0.1:50010 is added to blk_8485580292539901814_1003 size 7079
+2013-10-05 16:33:03,134 INFO org.apache.hadoop.hdfs.StateChange: Removing lease on  /user/rushil_345/output/_temporary/_attempt_local1609883710_0001_r_000000_0/part-r-00000 from client DFSClient_NONMAPREDUCE_-1050787736_1
+2013-10-05 16:33:03,134 INFO org.apache.hadoop.hdfs.StateChange: DIR* completeFile: /user/rushil_345/output/_temporary/_attempt_local1609883710_0001_r_000000_0/part-r-00000 is closed by DFSClient_NONMAPREDUCE_-1050787736_1
+2013-10-05 16:33:03,209 INFO org.apache.hadoop.hdfs.StateChange: Removing lease on  /user/rushil_345/output/_SUCCESS from client DFSClient_NONMAPREDUCE_-1050787736_1
+2013-10-05 16:33:03,209 INFO org.apache.hadoop.hdfs.StateChange: DIR* completeFile: /user/rushil_345/output/_SUCCESS is closed by DFSClient_NONMAPREDUCE_-1050787736_1
+2013-10-05 16:33:48,798 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* addToInvalidates: blk_8485580292539901814 to 127.0.0.1:50010 
+2013-10-05 16:33:51,338 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* ask 127.0.0.1:50010 to delete  blk_8485580292539901814_1003
+2013-10-05 16:34:13,719 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 20 Total time for transactions(ms): 1 Number of transactions batched in Syncs: 1 Number of syncs: 11 SyncTimes(ms): 58 
+2013-10-05 16:34:13,731 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* allocateBlock: /user/rushil_345/input/hw1.txt. blk_5650124854188609075_1005
+2013-10-05 16:34:16,826 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* addStoredBlock: blockMap updated: 127.0.0.1:50010 is added to blk_5650124854188609075_1005 size 67108864
+2013-10-05 16:34:16,829 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* allocateBlock: /user/rushil_345/input/hw1.txt. blk_763457002996459416_1005
+2013-10-05 16:34:20,232 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* addStoredBlock: blockMap updated: 127.0.0.1:50010 is added to blk_763457002996459416_1005 size 67108864
+2013-10-05 16:34:20,235 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* allocateBlock: /user/rushil_345/input/hw1.txt. blk_1656469010861324038_1005
+2013-10-05 16:34:24,884 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* addStoredBlock: blockMap updated: 127.0.0.1:50010 is added to blk_1656469010861324038_1005 size 67108864
+2013-10-05 16:34:24,886 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* allocateBlock: /user/rushil_345/input/hw1.txt. blk_-8069543343858064480_1005
+2013-10-05 16:34:29,149 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* addStoredBlock: blockMap updated: 127.0.0.1:50010 is added to blk_-8069543343858064480_1005 size 67108864
+2013-10-05 16:34:29,151 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* allocateBlock: /user/rushil_345/input/hw1.txt. blk_-6040455082758569383_1005
+2013-10-05 16:34:32,876 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* addStoredBlock: blockMap updated: 127.0.0.1:50010 is added to blk_-6040455082758569383_1005 size 67108864
+2013-10-05 16:34:32,879 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* allocateBlock: /user/rushil_345/input/hw1.txt. blk_9015956413727874311_1005
+2013-10-05 16:34:36,512 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* addStoredBlock: blockMap updated: 127.0.0.1:50010 is added to blk_9015956413727874311_1005 size 67108864
+2013-10-05 16:34:36,514 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* allocateBlock: /user/rushil_345/input/hw1.txt. blk_5505932130817755358_1005
+2013-10-05 16:34:39,823 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* addStoredBlock: blockMap updated: 127.0.0.1:50010 is added to blk_5505932130817755358_1005 size 67108864
+2013-10-05 16:34:39,826 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* allocateBlock: /user/rushil_345/input/hw1.txt. blk_-1144857674799470343_1005
+2013-10-05 16:34:43,069 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* addStoredBlock: blockMap updated: 127.0.0.1:50010 is added to blk_-1144857674799470343_1005 size 67108864
+2013-10-05 16:34:43,072 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* allocateBlock: /user/rushil_345/input/hw1.txt. blk_2304827828766944738_1005
+2013-10-05 16:34:46,391 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* addStoredBlock: blockMap updated: 127.0.0.1:50010 is added to blk_2304827828766944738_1005 size 67108864
+2013-10-05 16:34:46,393 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* allocateBlock: /user/rushil_345/input/hw1.txt. blk_-6870348145492635337_1005
+2013-10-05 16:34:49,668 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* addStoredBlock: blockMap updated: 127.0.0.1:50010 is added to blk_-6870348145492635337_1005 size 67108864
+2013-10-05 16:34:49,670 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* allocateBlock: /user/rushil_345/input/hw1.txt. blk_7918865588847510742_1005
+2013-10-05 16:34:53,123 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* addStoredBlock: blockMap updated: 127.0.0.1:50010 is added to blk_7918865588847510742_1005 size 67108864
+2013-10-05 16:34:53,124 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* allocateBlock: /user/rushil_345/input/hw1.txt. blk_-3263694120715575490_1005
+2013-10-05 16:34:56,526 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* addStoredBlock: blockMap updated: 127.0.0.1:50010 is added to blk_-3263694120715575490_1005 size 67108864
+2013-10-05 16:34:56,526 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* allocateBlock: /user/rushil_345/input/hw1.txt. blk_4795057171922029323_1005
+2013-10-05 16:35:00,021 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* addStoredBlock: blockMap updated: 127.0.0.1:50010 is added to blk_4795057171922029323_1005 size 67108864
+2013-10-05 16:35:00,022 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* allocateBlock: /user/rushil_345/input/hw1.txt. blk_1118168724950381993_1005
+2013-10-05 16:35:03,188 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* addStoredBlock: blockMap updated: 127.0.0.1:50010 is added to blk_1118168724950381993_1005 size 67108864
+2013-10-05 16:35:03,191 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* allocateBlock: /user/rushil_345/input/hw1.txt. blk_1961679021021116860_1005
+2013-10-05 16:35:06,088 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* addStoredBlock: blockMap updated: 127.0.0.1:50010 is added to blk_1961679021021116860_1005 size 67108864
+2013-10-05 16:35:06,090 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* allocateBlock: /user/rushil_345/input/hw1.txt. blk_3991303739701156819_1005
+2013-10-05 16:35:08,913 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* addStoredBlock: blockMap updated: 127.0.0.1:50010 is added to blk_3991303739701156819_1005 size 67108864
+2013-10-05 16:35:08,915 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* allocateBlock: /user/rushil_345/input/hw1.txt. blk_-4182866777066884015_1005
+2013-10-05 16:35:11,795 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* addStoredBlock: blockMap updated: 127.0.0.1:50010 is added to blk_-4182866777066884015_1005 size 67108864
+2013-10-05 16:35:11,796 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* allocateBlock: /user/rushil_345/input/hw1.txt. blk_-8324102611523117120_1005
+2013-10-05 16:35:14,417 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* addStoredBlock: blockMap updated: 127.0.0.1:50010 is added to blk_-8324102611523117120_1005 size 67108864
+2013-10-05 16:35:14,418 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* allocateBlock: /user/rushil_345/input/hw1.txt. blk_7917829107320084194_1005
+2013-10-05 16:35:17,309 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* addStoredBlock: blockMap updated: 127.0.0.1:50010 is added to blk_7917829107320084194_1005 size 67108864
+2013-10-05 16:35:17,311 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* allocateBlock: /user/rushil_345/input/hw1.txt. blk_4670013622114234940_1005
+2013-10-05 16:35:20,000 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* addStoredBlock: blockMap updated: 127.0.0.1:50010 is added to blk_4670013622114234940_1005 size 67108864
+2013-10-05 16:35:20,002 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* allocateBlock: /user/rushil_345/input/hw1.txt. blk_-1260309976064055047_1005
+2013-10-05 16:35:22,704 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* addStoredBlock: blockMap updated: 127.0.0.1:50010 is added to blk_-1260309976064055047_1005 size 67108864
+2013-10-05 16:35:22,707 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* allocateBlock: /user/rushil_345/input/hw1.txt. blk_-1795795149169434300_1005
+2013-10-05 16:35:24,401 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* addStoredBlock: blockMap updated: 127.0.0.1:50010 is added to blk_-1795795149169434300_1005 size 44721356
+2013-10-05 16:35:24,402 INFO org.apache.hadoop.hdfs.StateChange: Removing lease on  /user/rushil_345/input/hw1.txt from client DFSClient_1665725833
+2013-10-05 16:35:24,403 INFO org.apache.hadoop.hdfs.StateChange: DIR* completeFile: /user/rushil_345/input/hw1.txt is closed by DFSClient_1665725833
+2013-10-05 16:35:24,403 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 43 Total time for transactions(ms): 3 Number of transactions batched in Syncs: 1 Number of syncs: 12 SyncTimes(ms): 66 
+2013-10-05 16:36:11,965 INFO logs: Aliases are enabled
+2013-10-05 16:36:55,164 WARN org.apache.hadoop.security.ShellBasedUnixGroupsMapping: got exception trying to get groups for user webuser
+org.apache.hadoop.util.Shell$ExitCodeException: id: webuser: no such user
+
+	at org.apache.hadoop.util.Shell.runCommand(Shell.java:255)
+	at org.apache.hadoop.util.Shell.run(Shell.java:182)
+	at org.apache.hadoop.util.Shell$ShellCommandExecutor.execute(Shell.java:375)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:461)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:444)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getUnixGroups(ShellBasedUnixGroupsMapping.java:68)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getGroups(ShellBasedUnixGroupsMapping.java:45)
+	at org.apache.hadoop.security.Groups.getGroups(Groups.java:79)
+	at org.apache.hadoop.security.UserGroupInformation.getGroupNames(UserGroupInformation.java:1095)
+	at org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker.<init>(FSPermissionChecker.java:58)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getPermissionChecker(FSNamesystem.java:5707)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getFileInfo(FSNamesystem.java:2455)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.getFileInfo(NameNode.java:942)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:587)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1432)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1428)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1190)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:1426)
+2013-10-05 16:36:55,165 WARN org.apache.hadoop.security.UserGroupInformation: No groups available for user webuser
+2013-10-05 16:36:55,190 WARN org.apache.hadoop.security.ShellBasedUnixGroupsMapping: got exception trying to get groups for user webuser
+org.apache.hadoop.util.Shell$ExitCodeException: id: webuser: no such user
+
+	at org.apache.hadoop.util.Shell.runCommand(Shell.java:255)
+	at org.apache.hadoop.util.Shell.run(Shell.java:182)
+	at org.apache.hadoop.util.Shell$ShellCommandExecutor.execute(Shell.java:375)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:461)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:444)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getUnixGroups(ShellBasedUnixGroupsMapping.java:68)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getGroups(ShellBasedUnixGroupsMapping.java:45)
+	at org.apache.hadoop.security.Groups.getGroups(Groups.java:79)
+	at org.apache.hadoop.security.UserGroupInformation.getGroupNames(UserGroupInformation.java:1095)
+	at org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker.<init>(FSPermissionChecker.java:58)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getPermissionChecker(FSNamesystem.java:5707)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getFileInfo(FSNamesystem.java:2455)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.getFileInfo(NameNode.java:942)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:587)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1432)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1428)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1190)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:1426)
+2013-10-05 16:36:55,191 WARN org.apache.hadoop.security.UserGroupInformation: No groups available for user webuser
+2013-10-05 16:36:55,215 WARN org.apache.hadoop.security.ShellBasedUnixGroupsMapping: got exception trying to get groups for user webuser
+org.apache.hadoop.util.Shell$ExitCodeException: id: webuser: no such user
+
+	at org.apache.hadoop.util.Shell.runCommand(Shell.java:255)
+	at org.apache.hadoop.util.Shell.run(Shell.java:182)
+	at org.apache.hadoop.util.Shell$ShellCommandExecutor.execute(Shell.java:375)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:461)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:444)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getUnixGroups(ShellBasedUnixGroupsMapping.java:68)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getGroups(ShellBasedUnixGroupsMapping.java:45)
+	at org.apache.hadoop.security.Groups.getGroups(Groups.java:79)
+	at org.apache.hadoop.security.UserGroupInformation.getGroupNames(UserGroupInformation.java:1095)
+	at org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker.<init>(FSPermissionChecker.java:58)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getPermissionChecker(FSNamesystem.java:5707)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getListing(FSNamesystem.java:2784)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.getListing(NameNode.java:925)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:587)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1432)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1428)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1190)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:1426)
+2013-10-05 16:36:55,216 WARN org.apache.hadoop.security.UserGroupInformation: No groups available for user webuser
+2013-10-05 16:36:58,047 WARN org.apache.hadoop.security.ShellBasedUnixGroupsMapping: got exception trying to get groups for user webuser
+org.apache.hadoop.util.Shell$ExitCodeException: id: webuser: no such user
+
+	at org.apache.hadoop.util.Shell.runCommand(Shell.java:255)
+	at org.apache.hadoop.util.Shell.run(Shell.java:182)
+	at org.apache.hadoop.util.Shell$ShellCommandExecutor.execute(Shell.java:375)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:461)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:444)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getUnixGroups(ShellBasedUnixGroupsMapping.java:68)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getGroups(ShellBasedUnixGroupsMapping.java:45)
+	at org.apache.hadoop.security.Groups.getGroups(Groups.java:79)
+	at org.apache.hadoop.security.UserGroupInformation.getGroupNames(UserGroupInformation.java:1095)
+	at org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker.<init>(FSPermissionChecker.java:58)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getPermissionChecker(FSNamesystem.java:5707)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getFileInfo(FSNamesystem.java:2455)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.getFileInfo(NameNode.java:942)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:587)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1432)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1428)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1190)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:1426)
+2013-10-05 16:36:58,048 WARN org.apache.hadoop.security.UserGroupInformation: No groups available for user webuser
+2013-10-05 16:36:58,070 WARN org.apache.hadoop.security.ShellBasedUnixGroupsMapping: got exception trying to get groups for user webuser
+org.apache.hadoop.util.Shell$ExitCodeException: id: webuser: no such user
+
+	at org.apache.hadoop.util.Shell.runCommand(Shell.java:255)
+	at org.apache.hadoop.util.Shell.run(Shell.java:182)
+	at org.apache.hadoop.util.Shell$ShellCommandExecutor.execute(Shell.java:375)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:461)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:444)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getUnixGroups(ShellBasedUnixGroupsMapping.java:68)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getGroups(ShellBasedUnixGroupsMapping.java:45)
+	at org.apache.hadoop.security.Groups.getGroups(Groups.java:79)
+	at org.apache.hadoop.security.UserGroupInformation.getGroupNames(UserGroupInformation.java:1095)
+	at org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker.<init>(FSPermissionChecker.java:58)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getPermissionChecker(FSNamesystem.java:5707)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getFileInfo(FSNamesystem.java:2455)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.getFileInfo(NameNode.java:942)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:587)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1432)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1428)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1190)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:1426)
+2013-10-05 16:36:58,071 WARN org.apache.hadoop.security.UserGroupInformation: No groups available for user webuser
+2013-10-05 16:36:58,094 WARN org.apache.hadoop.security.ShellBasedUnixGroupsMapping: got exception trying to get groups for user webuser
+org.apache.hadoop.util.Shell$ExitCodeException: id: webuser: no such user
+
+	at org.apache.hadoop.util.Shell.runCommand(Shell.java:255)
+	at org.apache.hadoop.util.Shell.run(Shell.java:182)
+	at org.apache.hadoop.util.Shell$ShellCommandExecutor.execute(Shell.java:375)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:461)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:444)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getUnixGroups(ShellBasedUnixGroupsMapping.java:68)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getGroups(ShellBasedUnixGroupsMapping.java:45)
+	at org.apache.hadoop.security.Groups.getGroups(Groups.java:79)
+	at org.apache.hadoop.security.UserGroupInformation.getGroupNames(UserGroupInformation.java:1095)
+	at org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker.<init>(FSPermissionChecker.java:58)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getPermissionChecker(FSNamesystem.java:5707)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getListing(FSNamesystem.java:2784)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.getListing(NameNode.java:925)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:587)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1432)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1428)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1190)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:1426)
+2013-10-05 16:36:58,094 WARN org.apache.hadoop.security.UserGroupInformation: No groups available for user webuser
+2013-10-05 16:36:59,386 WARN org.apache.hadoop.security.ShellBasedUnixGroupsMapping: got exception trying to get groups for user webuser
+org.apache.hadoop.util.Shell$ExitCodeException: id: webuser: no such user
+
+	at org.apache.hadoop.util.Shell.runCommand(Shell.java:255)
+	at org.apache.hadoop.util.Shell.run(Shell.java:182)
+	at org.apache.hadoop.util.Shell$ShellCommandExecutor.execute(Shell.java:375)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:461)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:444)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getUnixGroups(ShellBasedUnixGroupsMapping.java:68)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getGroups(ShellBasedUnixGroupsMapping.java:45)
+	at org.apache.hadoop.security.Groups.getGroups(Groups.java:79)
+	at org.apache.hadoop.security.UserGroupInformation.getGroupNames(UserGroupInformation.java:1095)
+	at org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker.<init>(FSPermissionChecker.java:58)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getPermissionChecker(FSNamesystem.java:5707)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getFileInfo(FSNamesystem.java:2455)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.getFileInfo(NameNode.java:942)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:587)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1432)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1428)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1190)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:1426)
+2013-10-05 16:36:59,387 WARN org.apache.hadoop.security.UserGroupInformation: No groups available for user webuser
+2013-10-05 16:36:59,410 WARN org.apache.hadoop.security.ShellBasedUnixGroupsMapping: got exception trying to get groups for user webuser
+org.apache.hadoop.util.Shell$ExitCodeException: id: webuser: no such user
+
+	at org.apache.hadoop.util.Shell.runCommand(Shell.java:255)
+	at org.apache.hadoop.util.Shell.run(Shell.java:182)
+	at org.apache.hadoop.util.Shell$ShellCommandExecutor.execute(Shell.java:375)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:461)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:444)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getUnixGroups(ShellBasedUnixGroupsMapping.java:68)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getGroups(ShellBasedUnixGroupsMapping.java:45)
+	at org.apache.hadoop.security.Groups.getGroups(Groups.java:79)
+	at org.apache.hadoop.security.UserGroupInformation.getGroupNames(UserGroupInformation.java:1095)
+	at org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker.<init>(FSPermissionChecker.java:58)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getPermissionChecker(FSNamesystem.java:5707)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getFileInfo(FSNamesystem.java:2455)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.getFileInfo(NameNode.java:942)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:587)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1432)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1428)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1190)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:1426)
+2013-10-05 16:36:59,411 WARN org.apache.hadoop.security.UserGroupInformation: No groups available for user webuser
+2013-10-05 16:36:59,433 WARN org.apache.hadoop.security.ShellBasedUnixGroupsMapping: got exception trying to get groups for user webuser
+org.apache.hadoop.util.Shell$ExitCodeException: id: webuser: no such user
+
+	at org.apache.hadoop.util.Shell.runCommand(Shell.java:255)
+	at org.apache.hadoop.util.Shell.run(Shell.java:182)
+	at org.apache.hadoop.util.Shell$ShellCommandExecutor.execute(Shell.java:375)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:461)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:444)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getUnixGroups(ShellBasedUnixGroupsMapping.java:68)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getGroups(ShellBasedUnixGroupsMapping.java:45)
+	at org.apache.hadoop.security.Groups.getGroups(Groups.java:79)
+	at org.apache.hadoop.security.UserGroupInformation.getGroupNames(UserGroupInformation.java:1095)
+	at org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker.<init>(FSPermissionChecker.java:58)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getPermissionChecker(FSNamesystem.java:5707)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getListing(FSNamesystem.java:2784)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.getListing(NameNode.java:925)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:587)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1432)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1428)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1190)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:1426)
+2013-10-05 16:36:59,434 WARN org.apache.hadoop.security.UserGroupInformation: No groups available for user webuser
+2013-10-05 16:37:00,445 WARN org.apache.hadoop.security.ShellBasedUnixGroupsMapping: got exception trying to get groups for user webuser
+org.apache.hadoop.util.Shell$ExitCodeException: id: webuser: no such user
+
+	at org.apache.hadoop.util.Shell.runCommand(Shell.java:255)
+	at org.apache.hadoop.util.Shell.run(Shell.java:182)
+	at org.apache.hadoop.util.Shell$ShellCommandExecutor.execute(Shell.java:375)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:461)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:444)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getUnixGroups(ShellBasedUnixGroupsMapping.java:68)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getGroups(ShellBasedUnixGroupsMapping.java:45)
+	at org.apache.hadoop.security.Groups.getGroups(Groups.java:79)
+	at org.apache.hadoop.security.UserGroupInformation.getGroupNames(UserGroupInformation.java:1095)
+	at org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker.<init>(FSPermissionChecker.java:58)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getPermissionChecker(FSNamesystem.java:5707)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getFileInfo(FSNamesystem.java:2455)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.getFileInfo(NameNode.java:942)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:587)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1432)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1428)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1190)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:1426)
+2013-10-05 16:37:00,451 WARN org.apache.hadoop.security.UserGroupInformation: No groups available for user webuser
+2013-10-05 16:37:00,473 WARN org.apache.hadoop.security.ShellBasedUnixGroupsMapping: got exception trying to get groups for user webuser
+org.apache.hadoop.util.Shell$ExitCodeException: id: webuser: no such user
+
+	at org.apache.hadoop.util.Shell.runCommand(Shell.java:255)
+	at org.apache.hadoop.util.Shell.run(Shell.java:182)
+	at org.apache.hadoop.util.Shell$ShellCommandExecutor.execute(Shell.java:375)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:461)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:444)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getUnixGroups(ShellBasedUnixGroupsMapping.java:68)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getGroups(ShellBasedUnixGroupsMapping.java:45)
+	at org.apache.hadoop.security.Groups.getGroups(Groups.java:79)
+	at org.apache.hadoop.security.UserGroupInformation.getGroupNames(UserGroupInformation.java:1095)
+	at org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker.<init>(FSPermissionChecker.java:58)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getPermissionChecker(FSNamesystem.java:5707)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getFileInfo(FSNamesystem.java:2455)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.getFileInfo(NameNode.java:942)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:587)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1432)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1428)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1190)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:1426)
+2013-10-05 16:37:00,474 WARN org.apache.hadoop.security.UserGroupInformation: No groups available for user webuser
+2013-10-05 16:37:00,511 WARN org.apache.hadoop.security.ShellBasedUnixGroupsMapping: got exception trying to get groups for user webuser
+org.apache.hadoop.util.Shell$ExitCodeException: id: webuser: no such user
+
+	at org.apache.hadoop.util.Shell.runCommand(Shell.java:255)
+	at org.apache.hadoop.util.Shell.run(Shell.java:182)
+	at org.apache.hadoop.util.Shell$ShellCommandExecutor.execute(Shell.java:375)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:461)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:444)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getUnixGroups(ShellBasedUnixGroupsMapping.java:68)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getGroups(ShellBasedUnixGroupsMapping.java:45)
+	at org.apache.hadoop.security.Groups.getGroups(Groups.java:79)
+	at org.apache.hadoop.security.UserGroupInformation.getGroupNames(UserGroupInformation.java:1095)
+	at org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker.<init>(FSPermissionChecker.java:58)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getPermissionChecker(FSNamesystem.java:5707)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getListing(FSNamesystem.java:2784)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.getListing(NameNode.java:925)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:587)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1432)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1428)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1190)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:1426)
+2013-10-05 16:37:00,511 WARN org.apache.hadoop.security.UserGroupInformation: No groups available for user webuser
+2013-10-05 16:37:01,301 WARN org.apache.hadoop.security.ShellBasedUnixGroupsMapping: got exception trying to get groups for user webuser
+org.apache.hadoop.util.Shell$ExitCodeException: id: webuser: no such user
+
+	at org.apache.hadoop.util.Shell.runCommand(Shell.java:255)
+	at org.apache.hadoop.util.Shell.run(Shell.java:182)
+	at org.apache.hadoop.util.Shell$ShellCommandExecutor.execute(Shell.java:375)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:461)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:444)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getUnixGroups(ShellBasedUnixGroupsMapping.java:68)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getGroups(ShellBasedUnixGroupsMapping.java:45)
+	at org.apache.hadoop.security.Groups.getGroups(Groups.java:79)
+	at org.apache.hadoop.security.UserGroupInformation.getGroupNames(UserGroupInformation.java:1095)
+	at org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker.<init>(FSPermissionChecker.java:58)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getPermissionChecker(FSNamesystem.java:5707)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getFileInfo(FSNamesystem.java:2455)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.getFileInfo(NameNode.java:942)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:587)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1432)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1428)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1190)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:1426)
+2013-10-05 16:37:01,302 WARN org.apache.hadoop.security.UserGroupInformation: No groups available for user webuser
+2013-10-05 16:37:01,327 WARN org.apache.hadoop.security.ShellBasedUnixGroupsMapping: got exception trying to get groups for user webuser
+org.apache.hadoop.util.Shell$ExitCodeException: id: webuser: no such user
+
+	at org.apache.hadoop.util.Shell.runCommand(Shell.java:255)
+	at org.apache.hadoop.util.Shell.run(Shell.java:182)
+	at org.apache.hadoop.util.Shell$ShellCommandExecutor.execute(Shell.java:375)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:461)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:444)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getUnixGroups(ShellBasedUnixGroupsMapping.java:68)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getGroups(ShellBasedUnixGroupsMapping.java:45)
+	at org.apache.hadoop.security.Groups.getGroups(Groups.java:79)
+	at org.apache.hadoop.security.UserGroupInformation.getGroupNames(UserGroupInformation.java:1095)
+	at org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker.<init>(FSPermissionChecker.java:58)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getPermissionChecker(FSNamesystem.java:5707)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getFileInfo(FSNamesystem.java:2455)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.getFileInfo(NameNode.java:942)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:587)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1432)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1428)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1190)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:1426)
+2013-10-05 16:37:01,332 WARN org.apache.hadoop.security.UserGroupInformation: No groups available for user webuser
+2013-10-05 16:37:01,355 WARN org.apache.hadoop.security.ShellBasedUnixGroupsMapping: got exception trying to get groups for user webuser
+org.apache.hadoop.util.Shell$ExitCodeException: id: webuser: no such user
+
+	at org.apache.hadoop.util.Shell.runCommand(Shell.java:255)
+	at org.apache.hadoop.util.Shell.run(Shell.java:182)
+	at org.apache.hadoop.util.Shell$ShellCommandExecutor.execute(Shell.java:375)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:461)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:444)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getUnixGroups(ShellBasedUnixGroupsMapping.java:68)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getGroups(ShellBasedUnixGroupsMapping.java:45)
+	at org.apache.hadoop.security.Groups.getGroups(Groups.java:79)
+	at org.apache.hadoop.security.UserGroupInformation.getGroupNames(UserGroupInformation.java:1095)
+	at org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker.<init>(FSPermissionChecker.java:58)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getPermissionChecker(FSNamesystem.java:5707)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getListing(FSNamesystem.java:2784)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.getListing(NameNode.java:925)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:587)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1432)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1428)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1190)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:1426)
+2013-10-05 16:37:01,356 WARN org.apache.hadoop.security.UserGroupInformation: No groups available for user webuser
+2013-10-05 16:37:02,113 WARN org.apache.hadoop.security.ShellBasedUnixGroupsMapping: got exception trying to get groups for user webuser
+org.apache.hadoop.util.Shell$ExitCodeException: id: webuser: no such user
+
+	at org.apache.hadoop.util.Shell.runCommand(Shell.java:255)
+	at org.apache.hadoop.util.Shell.run(Shell.java:182)
+	at org.apache.hadoop.util.Shell$ShellCommandExecutor.execute(Shell.java:375)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:461)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:444)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getUnixGroups(ShellBasedUnixGroupsMapping.java:68)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getGroups(ShellBasedUnixGroupsMapping.java:45)
+	at org.apache.hadoop.security.Groups.getGroups(Groups.java:79)
+	at org.apache.hadoop.security.UserGroupInformation.getGroupNames(UserGroupInformation.java:1095)
+	at org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker.<init>(FSPermissionChecker.java:58)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getPermissionChecker(FSNamesystem.java:5707)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getFileInfo(FSNamesystem.java:2455)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.getFileInfo(NameNode.java:942)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:587)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1432)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1428)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1190)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:1426)
+2013-10-05 16:37:02,114 WARN org.apache.hadoop.security.UserGroupInformation: No groups available for user webuser
+2013-10-05 16:37:02,137 WARN org.apache.hadoop.security.ShellBasedUnixGroupsMapping: got exception trying to get groups for user webuser
+org.apache.hadoop.util.Shell$ExitCodeException: id: webuser: no such user
+
+	at org.apache.hadoop.util.Shell.runCommand(Shell.java:255)
+	at org.apache.hadoop.util.Shell.run(Shell.java:182)
+	at org.apache.hadoop.util.Shell$ShellCommandExecutor.execute(Shell.java:375)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:461)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:444)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getUnixGroups(ShellBasedUnixGroupsMapping.java:68)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getGroups(ShellBasedUnixGroupsMapping.java:45)
+	at org.apache.hadoop.security.Groups.getGroups(Groups.java:79)
+	at org.apache.hadoop.security.UserGroupInformation.getGroupNames(UserGroupInformation.java:1095)
+	at org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker.<init>(FSPermissionChecker.java:58)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getPermissionChecker(FSNamesystem.java:5707)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getFileInfo(FSNamesystem.java:2455)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.getFileInfo(NameNode.java:942)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:587)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1432)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1428)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1190)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:1426)
+2013-10-05 16:37:02,138 WARN org.apache.hadoop.security.UserGroupInformation: No groups available for user webuser
+2013-10-05 16:37:02,163 WARN org.apache.hadoop.security.ShellBasedUnixGroupsMapping: got exception trying to get groups for user webuser
+org.apache.hadoop.util.Shell$ExitCodeException: id: webuser: no such user
+
+	at org.apache.hadoop.util.Shell.runCommand(Shell.java:255)
+	at org.apache.hadoop.util.Shell.run(Shell.java:182)
+	at org.apache.hadoop.util.Shell$ShellCommandExecutor.execute(Shell.java:375)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:461)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:444)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getUnixGroups(ShellBasedUnixGroupsMapping.java:68)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getGroups(ShellBasedUnixGroupsMapping.java:45)
+	at org.apache.hadoop.security.Groups.getGroups(Groups.java:79)
+	at org.apache.hadoop.security.UserGroupInformation.getGroupNames(UserGroupInformation.java:1095)
+	at org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker.<init>(FSPermissionChecker.java:58)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getPermissionChecker(FSNamesystem.java:5707)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getListing(FSNamesystem.java:2784)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.getListing(NameNode.java:925)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:587)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1432)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1428)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1190)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:1426)
+2013-10-05 16:37:02,163 WARN org.apache.hadoop.security.UserGroupInformation: No groups available for user webuser
+2013-10-05 16:37:02,911 WARN org.apache.hadoop.security.ShellBasedUnixGroupsMapping: got exception trying to get groups for user webuser
+org.apache.hadoop.util.Shell$ExitCodeException: id: webuser: no such user
+
+	at org.apache.hadoop.util.Shell.runCommand(Shell.java:255)
+	at org.apache.hadoop.util.Shell.run(Shell.java:182)
+	at org.apache.hadoop.util.Shell$ShellCommandExecutor.execute(Shell.java:375)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:461)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:444)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getUnixGroups(ShellBasedUnixGroupsMapping.java:68)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getGroups(ShellBasedUnixGroupsMapping.java:45)
+	at org.apache.hadoop.security.Groups.getGroups(Groups.java:79)
+	at org.apache.hadoop.security.UserGroupInformation.getGroupNames(UserGroupInformation.java:1095)
+	at org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker.<init>(FSPermissionChecker.java:58)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getPermissionChecker(FSNamesystem.java:5707)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getFileInfo(FSNamesystem.java:2455)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.getFileInfo(NameNode.java:942)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:587)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1432)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1428)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1190)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:1426)
+2013-10-05 16:37:02,912 WARN org.apache.hadoop.security.UserGroupInformation: No groups available for user webuser
+2013-10-05 16:37:02,941 WARN org.apache.hadoop.security.ShellBasedUnixGroupsMapping: got exception trying to get groups for user webuser
+org.apache.hadoop.util.Shell$ExitCodeException: id: webuser: no such user
+
+	at org.apache.hadoop.util.Shell.runCommand(Shell.java:255)
+	at org.apache.hadoop.util.Shell.run(Shell.java:182)
+	at org.apache.hadoop.util.Shell$ShellCommandExecutor.execute(Shell.java:375)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:461)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:444)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getUnixGroups(ShellBasedUnixGroupsMapping.java:68)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getGroups(ShellBasedUnixGroupsMapping.java:45)
+	at org.apache.hadoop.security.Groups.getGroups(Groups.java:79)
+	at org.apache.hadoop.security.UserGroupInformation.getGroupNames(UserGroupInformation.java:1095)
+	at org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker.<init>(FSPermissionChecker.java:58)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getPermissionChecker(FSNamesystem.java:5707)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getFileInfo(FSNamesystem.java:2455)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.getFileInfo(NameNode.java:942)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:587)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1432)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1428)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1190)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:1426)
+2013-10-05 16:37:02,942 WARN org.apache.hadoop.security.UserGroupInformation: No groups available for user webuser
+2013-10-05 16:37:02,969 WARN org.apache.hadoop.security.ShellBasedUnixGroupsMapping: got exception trying to get groups for user webuser
+org.apache.hadoop.util.Shell$ExitCodeException: id: webuser: no such user
+
+	at org.apache.hadoop.util.Shell.runCommand(Shell.java:255)
+	at org.apache.hadoop.util.Shell.run(Shell.java:182)
+	at org.apache.hadoop.util.Shell$ShellCommandExecutor.execute(Shell.java:375)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:461)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:444)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getUnixGroups(ShellBasedUnixGroupsMapping.java:68)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getGroups(ShellBasedUnixGroupsMapping.java:45)
+	at org.apache.hadoop.security.Groups.getGroups(Groups.java:79)
+	at org.apache.hadoop.security.UserGroupInformation.getGroupNames(UserGroupInformation.java:1095)
+	at org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker.<init>(FSPermissionChecker.java:58)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getPermissionChecker(FSNamesystem.java:5707)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getListing(FSNamesystem.java:2784)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.getListing(NameNode.java:925)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:587)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1432)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1428)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1190)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:1426)
+2013-10-05 16:37:02,970 WARN org.apache.hadoop.security.UserGroupInformation: No groups available for user webuser
+2013-10-05 16:37:02,971 ERROR org.apache.hadoop.security.UserGroupInformation: PriviledgedActionException as:webuser cause:org.apache.hadoop.security.AccessControlException: Permission denied: user=webuser, access=READ_EXECUTE, inode="system":rushil_345:supergroup:rwx------
+2013-10-05 16:37:02,971 INFO org.apache.hadoop.ipc.Server: IPC Server handler 7 on 54310, call getListing(/Users/rushil_345/Desktop/hadoop-rushil_345/mapred/system, [B@7bab2c3) from 127.0.0.1:61285: error: org.apache.hadoop.security.AccessControlException: Permission denied: user=webuser, access=READ_EXECUTE, inode="system":rushil_345:supergroup:rwx------
+org.apache.hadoop.security.AccessControlException: Permission denied: user=webuser, access=READ_EXECUTE, inode="system":rushil_345:supergroup:rwx------
+	at org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker.check(FSPermissionChecker.java:217)
+	at org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker.checkPermission(FSPermissionChecker.java:147)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.checkPermission(FSNamesystem.java:5758)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.checkPathAccess(FSNamesystem.java:5719)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getListing(FSNamesystem.java:2788)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.getListing(NameNode.java:925)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:587)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1432)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1428)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1190)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:1426)
+2013-10-05 16:43:38,459 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 46 Total time for transactions(ms): 3 Number of transactions batched in Syncs: 1 Number of syncs: 14 SyncTimes(ms): 237 
+2013-10-05 16:46:15,809 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down NameNode at Rushils-MacBook-Pro.local/192.168.1.105
+************************************************************/
+2013-10-05 16:58:31,150 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting NameNode
+STARTUP_MSG:   host = Rushils-MacBook-Pro.local/192.168.1.105
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 1.2.1
+STARTUP_MSG:   build = https://svn.apache.org/repos/asf/hadoop/common/branches/branch-1.2 -r 1503152; compiled by 'mattf' on Mon Jul 22 15:23:09 PDT 2013
+STARTUP_MSG:   java = 1.6.0_51
+************************************************************/
+2013-10-05 16:58:32,137 INFO org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2013-10-05 16:58:32,252 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source MetricsSystem,sub=Stats registered.
+2013-10-05 16:58:32,260 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2013-10-05 16:58:32,261 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: NameNode metrics system started
+2013-10-05 16:58:32,666 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source ugi registered.
+2013-10-05 16:58:32,794 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source jvm registered.
+2013-10-05 16:58:32,796 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source NameNode registered.
+2013-10-05 16:58:33,185 INFO org.apache.hadoop.hdfs.util.GSet: Computing capacity for map BlocksMap
+2013-10-05 16:58:33,185 INFO org.apache.hadoop.hdfs.util.GSet: VM type       = 64-bit
+2013-10-05 16:58:33,185 INFO org.apache.hadoop.hdfs.util.GSet: 2.0% max memory = 2088435712
+2013-10-05 16:58:33,185 INFO org.apache.hadoop.hdfs.util.GSet: capacity      = 2^22 = 4194304 entries
+2013-10-05 16:58:33,186 INFO org.apache.hadoop.hdfs.util.GSet: recommended=4194304, actual=4194304
+2013-10-05 16:58:33,292 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: fsOwner=rushil_345
+2013-10-05 16:58:33,293 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: supergroup=supergroup
+2013-10-05 16:58:33,293 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isPermissionEnabled=true
+2013-10-05 16:58:33,347 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.block.invalidate.limit=100
+2013-10-05 16:58:33,347 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isAccessTokenEnabled=false accessKeyUpdateInterval=0 min(s), accessTokenLifetime=0 min(s)
+2013-10-05 16:58:33,587 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Registered FSNamesystemStateMBean and NameNodeMXBean
+2013-10-05 16:58:34,276 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: dfs.namenode.edits.toleration.length = 0
+2013-10-05 16:58:34,276 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: Caching file names occuring more than 10 times 
+2013-10-05 16:58:34,521 INFO org.apache.hadoop.hdfs.server.common.Storage: Start loading image file /Users/rushil_345/Desktop/hadoop-rushil_345/dfs/name/current/fsimage
+2013-10-05 16:58:34,521 INFO org.apache.hadoop.hdfs.server.common.Storage: Number of files = 11
+2013-10-05 16:58:34,573 INFO org.apache.hadoop.hdfs.server.common.Storage: Number of files under construction = 0
+2013-10-05 16:58:34,573 INFO org.apache.hadoop.hdfs.server.common.Storage: Image file /Users/rushil_345/Desktop/hadoop-rushil_345/dfs/name/current/fsimage of size 1158 bytes loaded in 0 seconds.
+2013-10-05 16:58:34,573 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Start loading edits file /Users/rushil_345/Desktop/hadoop-rushil_345/dfs/name/current/edits
+2013-10-05 16:58:34,680 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Invalid opcode, reached end of edit log Number of transactions found: 48.  Bytes read: 12323
+2013-10-05 16:58:34,680 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Start checking end of edit log (/Users/rushil_345/Desktop/hadoop-rushil_345/dfs/name/current/edits) ...
+2013-10-05 16:58:35,606 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Checked the bytes after the end of edit log (/Users/rushil_345/Desktop/hadoop-rushil_345/dfs/name/current/edits):
+2013-10-05 16:58:35,606 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog:   Padding position  = 12323 (-1 means padding not found)
+2013-10-05 16:58:35,606 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog:   Edit log length   = 1048580
+2013-10-05 16:58:35,607 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog:   Read length       = 12323
+2013-10-05 16:58:35,607 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog:   Corruption length = 0
+2013-10-05 16:58:35,607 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog:   Toleration length = 0 (= dfs.namenode.edits.toleration.length)
+2013-10-05 16:58:35,609 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Summary: |---------- Read=12323 ----------|-- Corrupt=0 --|-- Pad=1036257 --|
+2013-10-05 16:58:35,620 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Edits file /Users/rushil_345/Desktop/hadoop-rushil_345/dfs/name/current/edits of size 1048580 edits # 48 loaded in 1 seconds.
+2013-10-05 16:58:35,636 INFO org.apache.hadoop.hdfs.server.common.Storage: Image file /Users/rushil_345/Desktop/hadoop-rushil_345/dfs/name/current/fsimage of size 2083 bytes saved in 0 seconds.
+2013-10-05 16:58:35,691 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: closing edit log: position=4, editlog=/Users/rushil_345/Desktop/hadoop-rushil_345/dfs/name/current/edits
+2013-10-05 16:58:35,691 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: close success: truncate to 4, editlog=/Users/rushil_345/Desktop/hadoop-rushil_345/dfs/name/current/edits
+2013-10-05 16:58:35,970 INFO org.apache.hadoop.hdfs.server.namenode.NameCache: initialized with 1 entries 24 lookups
+2013-10-05 16:58:35,971 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Finished loading FSImage in 2692 msecs
+2013-10-05 16:58:35,972 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.safemode.threshold.pct          = 0.9990000128746033
+2013-10-05 16:58:35,972 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.namenode.safemode.min.datanodes = 0
+2013-10-05 16:58:35,972 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.safemode.extension              = 30000
+2013-10-05 16:58:35,972 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Number of blocks excluded by safe block count: 0 total blocks: 24 and thus the safe blocks: 24
+2013-10-05 16:58:36,066 INFO org.apache.hadoop.hdfs.StateChange: STATE* Safe mode ON 
+The reported blocks is only 0 but the threshold is 0.9990 and the total blocks 24. Safe mode will be turned off automatically.
+2013-10-05 16:58:36,124 INFO org.apache.hadoop.util.HostsFileReader: Refreshing hosts (include/exclude) list
+2013-10-05 16:58:36,128 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source FSNamesystemMetrics registered.
+2013-10-05 16:58:36,157 INFO org.apache.hadoop.ipc.Server: Starting SocketReader
+2013-10-05 16:58:36,159 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source RpcDetailedActivityForPort54310 registered.
+2013-10-05 16:58:36,159 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source RpcActivityForPort54310 registered.
+2013-10-05 16:58:36,162 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: Namenode up at: localhost/127.0.0.1:54310
+2013-10-05 16:58:36,341 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2013-10-05 16:58:36,445 INFO org.apache.hadoop.http.HttpServer: Added global filtersafety (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
+2013-10-05 16:58:36,533 INFO org.apache.hadoop.http.HttpServer: dfs.webhdfs.enabled = false
+2013-10-05 16:58:36,588 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50070
+2013-10-05 16:58:36,590 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50070 webServer.getConnectors()[0].getLocalPort() returned 50070
+2013-10-05 16:58:36,590 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50070
+2013-10-05 16:58:36,590 INFO org.mortbay.log: jetty-6.1.26
+2013-10-05 16:58:37,680 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50070
+2013-10-05 16:58:37,682 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: Web-server up at: 0.0.0.0:50070
+2013-10-05 16:58:37,682 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2013-10-05 16:58:37,683 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 54310: starting
+2013-10-05 16:58:37,686 INFO org.apache.hadoop.ipc.Server: IPC Server handler 0 on 54310: starting
+2013-10-05 16:58:37,687 INFO org.apache.hadoop.ipc.Server: IPC Server handler 2 on 54310: starting
+2013-10-05 16:58:37,687 INFO org.apache.hadoop.ipc.Server: IPC Server handler 1 on 54310: starting
+2013-10-05 16:58:37,687 INFO org.apache.hadoop.ipc.Server: IPC Server handler 3 on 54310: starting
+2013-10-05 16:58:37,687 INFO org.apache.hadoop.ipc.Server: IPC Server handler 4 on 54310: starting
+2013-10-05 16:58:37,688 INFO org.apache.hadoop.ipc.Server: IPC Server handler 5 on 54310: starting
+2013-10-05 16:58:37,688 INFO org.apache.hadoop.ipc.Server: IPC Server handler 6 on 54310: starting
+2013-10-05 16:58:37,688 INFO org.apache.hadoop.ipc.Server: IPC Server handler 7 on 54310: starting
+2013-10-05 16:58:37,688 INFO org.apache.hadoop.ipc.Server: IPC Server handler 8 on 54310: starting
+2013-10-05 16:58:37,688 INFO org.apache.hadoop.ipc.Server: IPC Server handler 9 on 54310: starting
+2013-10-05 16:58:38,903 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* registerDatanode: node registration from 127.0.0.1:50010 storage DS-511143290-192.168.1.105-50010-1381003935563
+2013-10-05 16:58:38,905 INFO org.apache.hadoop.net.NetworkTopology: Adding a new node: /default-rack/127.0.0.1:50010
+2013-10-05 16:58:38,908 INFO org.apache.hadoop.hdfs.StateChange: *BLOCK* NameNode.blocksBeingWrittenReport: from 127.0.0.1:50010 0 blocks
+2013-10-05 16:58:38,956 INFO org.apache.hadoop.hdfs.StateChange: STATE* Safe mode extension entered 
+The reported blocks 24 has reached the threshold 0.9990 of total blocks 24. Safe mode will be turned off automatically in 29 seconds.
+2013-10-05 16:58:38,956 INFO org.apache.hadoop.hdfs.StateChange: *BLOCK* processReport: from 127.0.0.1:50010, blocks: 24, processing time: 3 msecs
+2013-10-05 16:58:58,974 INFO org.apache.hadoop.hdfs.StateChange: STATE* Safe mode ON 
+The reported blocks 24 has reached the threshold 0.9990 of total blocks 24. Safe mode will be turned off automatically in 9 seconds.
+2013-10-05 16:59:09,002 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Total number of blocks = 24
+2013-10-05 16:59:09,002 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Number of invalid blocks = 0
+2013-10-05 16:59:09,002 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Number of under-replicated blocks = 23
+2013-10-05 16:59:09,002 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Number of  over-replicated blocks = 0
+2013-10-05 16:59:09,002 INFO org.apache.hadoop.hdfs.StateChange: STATE* Safe mode termination scan for invalid, over- and under-replicated blocks completed in 17 msec
+2013-10-05 16:59:09,002 INFO org.apache.hadoop.hdfs.StateChange: STATE* Leaving safe mode after 35 secs
+2013-10-05 16:59:09,002 INFO org.apache.hadoop.hdfs.StateChange: STATE* Safe mode is OFF
+2013-10-05 16:59:09,003 INFO org.apache.hadoop.hdfs.StateChange: STATE* Network topology has 1 racks and 1 datanodes
+2013-10-05 16:59:09,003 INFO org.apache.hadoop.hdfs.StateChange: STATE* UnderReplicatedBlocks has 23 blocks
+2013-10-05 16:59:09,134 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: ReplicateQueue QueueProcessingStatistics: First cycle completed 0 blocks in 1 msec
+2013-10-05 16:59:09,134 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: InvalidateQueue QueueProcessingStatistics: First cycle completed 0 blocks in 0 msec
+2013-10-05 16:59:09,134 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: InvalidateQueue QueueProcessingStatistics: Queue flush completed 0 blocks in 0 msec processing time, 0 msec clock time, 1 cycles
+2013-10-05 16:59:09,862 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* addToInvalidates: blk_4377958220509453006 to 127.0.0.1:50010 
+2013-10-05 16:59:10,309 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* allocateBlock: /Users/rushil_345/Desktop/hadoop-rushil_345/mapred/system/jobtracker.info. blk_-4627408800351226649_1006
+2013-10-05 16:59:10,346 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* addStoredBlock: blockMap updated: 127.0.0.1:50010 is added to blk_-4627408800351226649_1006 size 4
+2013-10-05 16:59:10,348 INFO org.apache.hadoop.hdfs.StateChange: Removing lease on  /Users/rushil_345/Desktop/hadoop-rushil_345/mapred/system/jobtracker.info from client DFSClient_NONMAPREDUCE_240952904_1
+2013-10-05 16:59:10,349 INFO org.apache.hadoop.hdfs.StateChange: DIR* completeFile: /Users/rushil_345/Desktop/hadoop-rushil_345/mapred/system/jobtracker.info is closed by DFSClient_NONMAPREDUCE_240952904_1
+2013-10-05 16:59:12,136 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* ask 127.0.0.1:50010 to delete  blk_4377958220509453006_1001
+2013-10-05 17:02:09,253 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 9 Total time for transactions(ms): 2 Number of transactions batched in Syncs: 0 Number of syncs: 6 SyncTimes(ms): 105 
+2013-10-05 17:03:38,584 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Roll Edit Log from 127.0.0.1
+2013-10-05 17:03:38,584 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 12 Total time for transactions(ms): 2 Number of transactions batched in Syncs: 0 Number of syncs: 9 SyncTimes(ms): 116 
+2013-10-05 17:03:38,584 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: closing edit log: position=1178, editlog=/Users/rushil_345/Desktop/hadoop-rushil_345/dfs/name/current/edits
+2013-10-05 17:03:38,584 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: close success: truncate to 1178, editlog=/Users/rushil_345/Desktop/hadoop-rushil_345/dfs/name/current/edits
+2013-10-05 17:03:39,384 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://0.0.0.0:50090/getimage?getimage=1
+2013-10-05 17:03:39,485 INFO org.apache.hadoop.hdfs.server.namenode.GetImageServlet: Downloaded new fsimage with checksum: ee138c33b579fea0b2c10bf3dc752796
+2013-10-05 17:03:39,486 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Roll FSImage from 127.0.0.1
+2013-10-05 17:03:39,487 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 0 Total time for transactions(ms): 0 Number of transactions batched in Syncs: 0 Number of syncs: 1 SyncTimes(ms): 46 
+2013-10-05 17:03:39,487 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: closing edit log: position=4, editlog=/Users/rushil_345/Desktop/hadoop-rushil_345/dfs/name/current/edits.new
+2013-10-05 17:03:39,488 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: close success: truncate to 4, editlog=/Users/rushil_345/Desktop/hadoop-rushil_345/dfs/name/current/edits.new
+2013-10-05 17:05:22,795 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down NameNode at Rushils-MacBook-Pro.local/192.168.1.105
+************************************************************/
+2013-10-05 17:07:09,678 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting NameNode
+STARTUP_MSG:   host = Rushils-MacBook-Pro.local/192.168.1.105
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 1.2.1
+STARTUP_MSG:   build = https://svn.apache.org/repos/asf/hadoop/common/branches/branch-1.2 -r 1503152; compiled by 'mattf' on Mon Jul 22 15:23:09 PDT 2013
+STARTUP_MSG:   java = 1.6.0_51
+************************************************************/
+2013-10-05 17:07:09,865 INFO org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2013-10-05 17:07:09,881 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source MetricsSystem,sub=Stats registered.
+2013-10-05 17:07:09,883 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2013-10-05 17:07:09,883 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: NameNode metrics system started
+2013-10-05 17:07:10,059 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source ugi registered.
+2013-10-05 17:07:10,083 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source jvm registered.
+2013-10-05 17:07:10,084 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source NameNode registered.
+2013-10-05 17:07:10,117 INFO org.apache.hadoop.hdfs.util.GSet: Computing capacity for map BlocksMap
+2013-10-05 17:07:10,117 INFO org.apache.hadoop.hdfs.util.GSet: VM type       = 64-bit
+2013-10-05 17:07:10,117 INFO org.apache.hadoop.hdfs.util.GSet: 2.0% max memory = 2088435712
+2013-10-05 17:07:10,117 INFO org.apache.hadoop.hdfs.util.GSet: capacity      = 2^22 = 4194304 entries
+2013-10-05 17:07:10,117 INFO org.apache.hadoop.hdfs.util.GSet: recommended=4194304, actual=4194304
+2013-10-05 17:07:10,153 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: fsOwner=rushil_345
+2013-10-05 17:07:10,153 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: supergroup=supergroup
+2013-10-05 17:07:10,153 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isPermissionEnabled=true
+2013-10-05 17:07:10,198 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.block.invalidate.limit=100
+2013-10-05 17:07:10,199 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isAccessTokenEnabled=false accessKeyUpdateInterval=0 min(s), accessTokenLifetime=0 min(s)
+2013-10-05 17:07:10,390 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Registered FSNamesystemStateMBean and NameNodeMXBean
+2013-10-05 17:07:10,411 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: dfs.namenode.edits.toleration.length = 0
+2013-10-05 17:07:10,411 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: Caching file names occuring more than 10 times 
+2013-10-05 17:07:10,430 INFO org.apache.hadoop.hdfs.server.common.Storage: Start loading image file /Users/rushil_345/Desktop/hadoop-rushil_345/dfs/name/current/fsimage
+2013-10-05 17:07:10,430 INFO org.apache.hadoop.hdfs.server.common.Storage: Number of files = 13
+2013-10-05 17:07:10,441 INFO org.apache.hadoop.hdfs.server.common.Storage: Number of files under construction = 0
+2013-10-05 17:07:10,441 INFO org.apache.hadoop.hdfs.server.common.Storage: Image file /Users/rushil_345/Desktop/hadoop-rushil_345/dfs/name/current/fsimage of size 1882 bytes loaded in 0 seconds.
+2013-10-05 17:07:10,441 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Start loading edits file /Users/rushil_345/Desktop/hadoop-rushil_345/dfs/name/current/edits
+2013-10-05 17:07:10,442 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: EOF of /Users/rushil_345/Desktop/hadoop-rushil_345/dfs/name/current/edits, reached end of edit log Number of transactions found: 0.  Bytes read: 4
+2013-10-05 17:07:10,442 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Start checking end of edit log (/Users/rushil_345/Desktop/hadoop-rushil_345/dfs/name/current/edits) ...
+2013-10-05 17:07:10,442 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Checked the bytes after the end of edit log (/Users/rushil_345/Desktop/hadoop-rushil_345/dfs/name/current/edits):
+2013-10-05 17:07:10,442 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog:   Padding position  = -1 (-1 means padding not found)
+2013-10-05 17:07:10,442 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog:   Edit log length   = 4
+2013-10-05 17:07:10,442 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog:   Read length       = 4
+2013-10-05 17:07:10,442 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog:   Corruption length = 0
+2013-10-05 17:07:10,442 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog:   Toleration length = 0 (= dfs.namenode.edits.toleration.length)
+2013-10-05 17:07:10,444 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Summary: |---------- Read=4 ----------|-- Corrupt=0 --|-- Pad=0 --|
+2013-10-05 17:07:10,445 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Edits file /Users/rushil_345/Desktop/hadoop-rushil_345/dfs/name/current/edits of size 4 edits # 0 loaded in 0 seconds.
+2013-10-05 17:07:10,447 INFO org.apache.hadoop.hdfs.server.common.Storage: Image file /Users/rushil_345/Desktop/hadoop-rushil_345/dfs/name/current/fsimage of size 1882 bytes saved in 0 seconds.
+2013-10-05 17:07:10,508 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: closing edit log: position=4, editlog=/Users/rushil_345/Desktop/hadoop-rushil_345/dfs/name/current/edits
+2013-10-05 17:07:10,509 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: close success: truncate to 4, editlog=/Users/rushil_345/Desktop/hadoop-rushil_345/dfs/name/current/edits
+2013-10-05 17:07:10,542 INFO org.apache.hadoop.hdfs.server.namenode.NameCache: initialized with 0 entries 0 lookups
+2013-10-05 17:07:10,542 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Finished loading FSImage in 403 msecs
+2013-10-05 17:07:10,545 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.safemode.threshold.pct          = 0.9990000128746033
+2013-10-05 17:07:10,545 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.namenode.safemode.min.datanodes = 0
+2013-10-05 17:07:10,545 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.safemode.extension              = 30000
+2013-10-05 17:07:10,545 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Number of blocks excluded by safe block count: 0 total blocks: 24 and thus the safe blocks: 24
+2013-10-05 17:07:10,550 INFO org.apache.hadoop.hdfs.StateChange: STATE* Safe mode ON 
+The reported blocks is only 0 but the threshold is 0.9990 and the total blocks 24. Safe mode will be turned off automatically.
+2013-10-05 17:07:10,558 INFO org.apache.hadoop.util.HostsFileReader: Refreshing hosts (include/exclude) list
+2013-10-05 17:07:10,567 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source FSNamesystemMetrics registered.
+2013-10-05 17:07:10,607 INFO org.apache.hadoop.ipc.Server: Starting SocketReader
+2013-10-05 17:07:10,609 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source RpcDetailedActivityForPort54310 registered.
+2013-10-05 17:07:10,610 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source RpcActivityForPort54310 registered.
+2013-10-05 17:07:10,612 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: Namenode up at: localhost/127.0.0.1:54310
+2013-10-05 17:07:10,681 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2013-10-05 17:07:10,754 INFO org.apache.hadoop.http.HttpServer: Added global filtersafety (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
+2013-10-05 17:07:10,763 INFO org.apache.hadoop.http.HttpServer: dfs.webhdfs.enabled = false
+2013-10-05 17:07:10,778 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50070
+2013-10-05 17:07:10,783 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50070 webServer.getConnectors()[0].getLocalPort() returned 50070
+2013-10-05 17:07:10,783 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50070
+2013-10-05 17:07:10,783 INFO org.mortbay.log: jetty-6.1.26
+2013-10-05 17:07:11,226 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50070
+2013-10-05 17:07:11,226 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: Web-server up at: 0.0.0.0:50070
+2013-10-05 17:07:11,229 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2013-10-05 17:07:11,229 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 54310: starting
+2013-10-05 17:07:11,237 INFO org.apache.hadoop.ipc.Server: IPC Server handler 0 on 54310: starting
+2013-10-05 17:07:11,238 INFO org.apache.hadoop.ipc.Server: IPC Server handler 1 on 54310: starting
+2013-10-05 17:07:11,238 INFO org.apache.hadoop.ipc.Server: IPC Server handler 2 on 54310: starting
+2013-10-05 17:07:11,238 INFO org.apache.hadoop.ipc.Server: IPC Server handler 3 on 54310: starting
+2013-10-05 17:07:11,238 INFO org.apache.hadoop.ipc.Server: IPC Server handler 4 on 54310: starting
+2013-10-05 17:07:11,239 INFO org.apache.hadoop.ipc.Server: IPC Server handler 5 on 54310: starting
+2013-10-05 17:07:11,242 INFO org.apache.hadoop.ipc.Server: IPC Server handler 6 on 54310: starting
+2013-10-05 17:07:11,243 INFO org.apache.hadoop.ipc.Server: IPC Server handler 7 on 54310: starting
+2013-10-05 17:07:11,244 INFO org.apache.hadoop.ipc.Server: IPC Server handler 8 on 54310: starting
+2013-10-05 17:07:11,245 INFO org.apache.hadoop.ipc.Server: IPC Server handler 9 on 54310: starting
+2013-10-05 17:07:13,052 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* registerDatanode: node registration from 127.0.0.1:50010 storage DS-511143290-192.168.1.105-50010-1381003935563
+2013-10-05 17:07:13,056 INFO org.apache.hadoop.net.NetworkTopology: Adding a new node: /default-rack/127.0.0.1:50010
+2013-10-05 17:07:13,063 INFO org.apache.hadoop.hdfs.StateChange: *BLOCK* NameNode.blocksBeingWrittenReport: from 127.0.0.1:50010 0 blocks
+2013-10-05 17:07:13,096 INFO org.apache.hadoop.hdfs.StateChange: STATE* Safe mode extension entered 
+The reported blocks 24 has reached the threshold 0.9990 of total blocks 24. Safe mode will be turned off automatically in 29 seconds.
+2013-10-05 17:07:13,096 INFO org.apache.hadoop.hdfs.StateChange: *BLOCK* processReport: from 127.0.0.1:50010, blocks: 24, processing time: 8 msecs
+2013-10-05 17:07:33,119 INFO org.apache.hadoop.hdfs.StateChange: STATE* Safe mode ON 
+The reported blocks 24 has reached the threshold 0.9990 of total blocks 24. Safe mode will be turned off automatically in 9 seconds.
+2013-10-05 17:07:33,758 ERROR org.apache.hadoop.security.UserGroupInformation: PriviledgedActionException as:rushil_345 cause:org.apache.hadoop.hdfs.server.namenode.SafeModeException: Cannot create directory /user/rushil_345/output/_temporary. Name node is in safe mode.
+The reported blocks 24 has reached the threshold 0.9990 of total blocks 24. Safe mode will be turned off automatically in 9 seconds.
+2013-10-05 17:07:33,759 INFO org.apache.hadoop.ipc.Server: IPC Server handler 4 on 54310, call mkdirs(/user/rushil_345/output/_temporary, rwxr-xr-x) from 127.0.0.1:49417: error: org.apache.hadoop.hdfs.server.namenode.SafeModeException: Cannot create directory /user/rushil_345/output/_temporary. Name node is in safe mode.
+The reported blocks 24 has reached the threshold 0.9990 of total blocks 24. Safe mode will be turned off automatically in 9 seconds.
+2013-10-05 17:07:43,146 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Total number of blocks = 24
+2013-10-05 17:07:43,146 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Number of invalid blocks = 0
+2013-10-05 17:07:43,146 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Number of under-replicated blocks = 23
+2013-10-05 17:07:43,146 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Number of  over-replicated blocks = 0
+2013-10-05 17:07:43,146 INFO org.apache.hadoop.hdfs.StateChange: STATE* Safe mode termination scan for invalid, over- and under-replicated blocks completed in 18 msec
+2013-10-05 17:07:43,146 INFO org.apache.hadoop.hdfs.StateChange: STATE* Leaving safe mode after 33 secs
+2013-10-05 17:07:43,146 INFO org.apache.hadoop.hdfs.StateChange: STATE* Safe mode is OFF
+2013-10-05 17:07:43,146 INFO org.apache.hadoop.hdfs.StateChange: STATE* Network topology has 1 racks and 1 datanodes
+2013-10-05 17:07:43,146 INFO org.apache.hadoop.hdfs.StateChange: STATE* UnderReplicatedBlocks has 23 blocks
+2013-10-05 17:07:43,567 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: ReplicateQueue QueueProcessingStatistics: First cycle completed 0 blocks in 1 msec
+2013-10-05 17:07:43,568 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: InvalidateQueue QueueProcessingStatistics: First cycle completed 0 blocks in 0 msec
+2013-10-05 17:07:43,568 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: InvalidateQueue QueueProcessingStatistics: Queue flush completed 0 blocks in 0 msec processing time, 0 msec clock time, 1 cycles
+2013-10-05 17:07:43,659 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* addToInvalidates: blk_-4627408800351226649 to 127.0.0.1:50010 
+2013-10-05 17:07:43,724 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* allocateBlock: /Users/rushil_345/Desktop/hadoop-rushil_345/mapred/system/jobtracker.info. blk_-835577310744291277_1007
+2013-10-05 17:07:43,750 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* addStoredBlock: blockMap updated: 127.0.0.1:50010 is added to blk_-835577310744291277_1007 size 4
+2013-10-05 17:07:43,751 INFO org.apache.hadoop.hdfs.StateChange: Removing lease on  /Users/rushil_345/Desktop/hadoop-rushil_345/mapred/system/jobtracker.info from client DFSClient_NONMAPREDUCE_-396383049_1
+2013-10-05 17:07:43,751 INFO org.apache.hadoop.hdfs.StateChange: DIR* completeFile: /Users/rushil_345/Desktop/hadoop-rushil_345/mapred/system/jobtracker.info is closed by DFSClient_NONMAPREDUCE_-396383049_1
+2013-10-05 17:07:46,569 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* ask 127.0.0.1:50010 to delete  blk_-4627408800351226649_1006
+2013-10-05 17:08:14,671 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 10 Total time for transactions(ms): 1 Number of transactions batched in Syncs: 0 Number of syncs: 6 SyncTimes(ms): 8 
+2013-10-05 17:10:57,034 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 11 Total time for transactions(ms): 1 Number of transactions batched in Syncs: 0 Number of syncs: 7 SyncTimes(ms): 8 
+2013-10-05 17:12:14,283 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Roll Edit Log from 127.0.0.1
+2013-10-05 17:12:14,283 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 11 Total time for transactions(ms): 1 Number of transactions batched in Syncs: 0 Number of syncs: 8 SyncTimes(ms): 9 
+2013-10-05 17:12:14,283 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: closing edit log: position=1135, editlog=/Users/rushil_345/Desktop/hadoop-rushil_345/dfs/name/current/edits
+2013-10-05 17:12:14,283 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: close success: truncate to 1135, editlog=/Users/rushil_345/Desktop/hadoop-rushil_345/dfs/name/current/edits
+2013-10-05 17:12:14,768 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://0.0.0.0:50090/getimage?getimage=1
+2013-10-05 17:12:14,836 INFO org.apache.hadoop.hdfs.server.namenode.GetImageServlet: Downloaded new fsimage with checksum: 6e79296601ba0422e130d514cec41fdf
+2013-10-05 17:12:14,837 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Roll FSImage from 127.0.0.1
+2013-10-05 17:12:14,837 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 0 Total time for transactions(ms): 0 Number of transactions batched in Syncs: 0 Number of syncs: 1 SyncTimes(ms): 7 
+2013-10-05 17:12:14,838 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: closing edit log: position=4, editlog=/Users/rushil_345/Desktop/hadoop-rushil_345/dfs/name/current/edits.new
+2013-10-05 17:12:14,838 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: close success: truncate to 4, editlog=/Users/rushil_345/Desktop/hadoop-rushil_345/dfs/name/current/edits.new
+2013-10-05 17:20:39,333 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down NameNode at Rushils-MacBook-Pro.local/192.168.1.105
+************************************************************/

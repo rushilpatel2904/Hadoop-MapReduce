@@ -1,0 +1,3 @@
+Downloading 's3://us-west-2.elasticmapreduce/libs/hive/hive-script' to '/mnt/var/lib/hadoop/steps/3/.'
+2013-12-05 18:39:28 GMT - ERROR missing required argument base-path
+2013-12-05 18:39:28 GMT - INFO Running: /home/hadoop/.versions/hive-0.11.0/bin/hive '-f' 's3n://finalproj-puru/hivequery.q'

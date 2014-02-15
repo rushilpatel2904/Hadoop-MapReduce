@@ -1,0 +1,169 @@
+2013-10-05 16:12:13,994 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting SecondaryNameNode
+STARTUP_MSG:   host = Rushils-MacBook-Pro.local/192.168.1.105
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 1.2.1
+STARTUP_MSG:   build = https://svn.apache.org/repos/asf/hadoop/common/branches/branch-1.2 -r 1503152; compiled by 'mattf' on Mon Jul 22 15:23:09 PDT 2013
+STARTUP_MSG:   java = 1.6.0_51
+************************************************************/
+2013-10-05 16:12:14,209 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: dfs.namenode.edits.toleration.length is set to 0.  Override it with -1, i.e. disable it.
+2013-10-05 16:12:15,616 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2013-10-05 16:12:15,704 INFO org.apache.hadoop.http.HttpServer: Added global filtersafety (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
+2013-10-05 16:12:15,709 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50090
+2013-10-05 16:12:15,716 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50090 webServer.getConnectors()[0].getLocalPort() returned 50090
+2013-10-05 16:12:15,717 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50090
+2013-10-05 16:12:15,717 INFO org.mortbay.log: jetty-6.1.26
+2013-10-05 16:12:16,432 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50090
+2013-10-05 16:12:16,432 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Web server init done
+2013-10-05 16:12:16,446 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Secondary Web-server up at: 0.0.0.0:50090
+2013-10-05 16:12:16,446 WARN org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Checkpoint Period   :3600 secs (60 min)
+2013-10-05 16:12:16,446 WARN org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Log Size Trigger    :67108864 bytes (65536 KB)
+2013-10-05 16:17:16,499 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://0.0.0.0:50070/getimage?getimage=1
+2013-10-05 16:17:16,634 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Downloaded file fsimage size 116 bytes.
+2013-10-05 16:17:16,634 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://0.0.0.0:50070/getimage?getedit=1
+2013-10-05 16:17:16,637 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Downloaded file edits size 1434 bytes.
+2013-10-05 16:17:16,640 INFO org.apache.hadoop.hdfs.util.GSet: Computing capacity for map BlocksMap
+2013-10-05 16:17:16,640 INFO org.apache.hadoop.hdfs.util.GSet: VM type       = 64-bit
+2013-10-05 16:17:16,640 INFO org.apache.hadoop.hdfs.util.GSet: 2.0% max memory = 2088435712
+2013-10-05 16:17:16,640 INFO org.apache.hadoop.hdfs.util.GSet: capacity      = 2^22 = 4194304 entries
+2013-10-05 16:17:16,640 INFO org.apache.hadoop.hdfs.util.GSet: recommended=4194304, actual=4194304
+2013-10-05 16:17:16,653 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: fsOwner=rushil_345
+2013-10-05 16:17:16,653 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: supergroup=supergroup
+2013-10-05 16:17:16,653 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isPermissionEnabled=true
+2013-10-05 16:17:16,659 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.block.invalidate.limit=100
+2013-10-05 16:17:16,659 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isAccessTokenEnabled=false accessKeyUpdateInterval=0 min(s), accessTokenLifetime=0 min(s)
+2013-10-05 16:17:16,700 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: dfs.namenode.edits.toleration.length = -1
+2013-10-05 16:17:16,700 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: Caching file names occuring more than 10 times 
+2013-10-05 16:17:16,918 INFO org.apache.hadoop.hdfs.server.common.Storage: Number of files = 1
+2013-10-05 16:17:16,918 INFO org.apache.hadoop.hdfs.server.common.Storage: Number of files under construction = 0
+2013-10-05 16:17:16,918 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Start loading edits file /Users/rushil_345/Desktop/hadoop-rushil_345/dfs/namesecondary/current/edits
+2013-10-05 16:17:16,928 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: EOF of /Users/rushil_345/Desktop/hadoop-rushil_345/dfs/namesecondary/current/edits, reached end of edit log Number of transactions found: 15.  Bytes read: 1434
+2013-10-05 16:17:16,929 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Edits file /Users/rushil_345/Desktop/hadoop-rushil_345/dfs/namesecondary/current/edits of size 1434 edits # 15 loaded in 0 seconds.
+2013-10-05 16:17:16,929 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 0 Total time for transactions(ms): 0 Number of transactions batched in Syncs: 0 Number of syncs: 0 SyncTimes(ms): 0 
+2013-10-05 16:17:16,930 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: closing edit log: position=1434, editlog=/Users/rushil_345/Desktop/hadoop-rushil_345/dfs/namesecondary/current/edits
+2013-10-05 16:17:16,931 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: close success: truncate to 1434, editlog=/Users/rushil_345/Desktop/hadoop-rushil_345/dfs/namesecondary/current/edits
+2013-10-05 16:17:16,932 INFO org.apache.hadoop.hdfs.server.common.Storage: Image file /Users/rushil_345/Desktop/hadoop-rushil_345/dfs/namesecondary/current/fsimage of size 1158 bytes saved in 0 seconds.
+2013-10-05 16:17:16,939 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: closing edit log: position=4, editlog=/Users/rushil_345/Desktop/hadoop-rushil_345/dfs/namesecondary/current/edits
+2013-10-05 16:17:16,939 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: close success: truncate to 4, editlog=/Users/rushil_345/Desktop/hadoop-rushil_345/dfs/namesecondary/current/edits
+2013-10-05 16:17:16,947 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Posted URL 0.0.0.0:50070putimage=1&port=50090&machine=0.0.0.0&token=-41:1707250613:0:1381004236000:1381003931821&newChecksum=acd8a2e2acfaa3cf7197b07793250a7f
+2013-10-05 16:17:16,947 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://0.0.0.0:50070/getimage?putimage=1&port=50090&machine=0.0.0.0&token=-41:1707250613:0:1381004236000:1381003931821&newChecksum=acd8a2e2acfaa3cf7197b07793250a7f
+2013-10-05 16:17:17,031 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Checkpoint done. New Image Size: 1158
+2013-10-05 16:46:26,330 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down SecondaryNameNode at Rushils-MacBook-Pro.local/192.168.1.105
+************************************************************/
+2013-10-05 16:58:31,391 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting SecondaryNameNode
+STARTUP_MSG:   host = Rushils-MacBook-Pro.local/192.168.1.105
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 1.2.1
+STARTUP_MSG:   build = https://svn.apache.org/repos/asf/hadoop/common/branches/branch-1.2 -r 1503152; compiled by 'mattf' on Mon Jul 22 15:23:09 PDT 2013
+STARTUP_MSG:   java = 1.6.0_51
+************************************************************/
+2013-10-05 16:58:31,649 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: dfs.namenode.edits.toleration.length is set to 0.  Override it with -1, i.e. disable it.
+2013-10-05 16:58:34,137 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:54310. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2013-10-05 16:58:35,138 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:54310. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2013-10-05 16:58:36,139 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:54310. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2013-10-05 16:58:37,141 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:54310. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2013-10-05 16:58:37,921 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2013-10-05 16:58:37,998 INFO org.apache.hadoop.http.HttpServer: Added global filtersafety (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
+2013-10-05 16:58:38,002 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50090
+2013-10-05 16:58:38,007 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50090 webServer.getConnectors()[0].getLocalPort() returned 50090
+2013-10-05 16:58:38,008 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50090
+2013-10-05 16:58:38,008 INFO org.mortbay.log: jetty-6.1.26
+2013-10-05 16:58:38,573 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50090
+2013-10-05 16:58:38,573 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Web server init done
+2013-10-05 16:58:38,573 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Secondary Web-server up at: 0.0.0.0:50090
+2013-10-05 16:58:38,573 WARN org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Checkpoint Period   :3600 secs (60 min)
+2013-10-05 16:58:38,573 WARN org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Log Size Trigger    :67108864 bytes (65536 KB)
+2013-10-05 17:03:38,682 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://0.0.0.0:50070/getimage?getimage=1
+2013-10-05 17:03:38,908 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Downloaded file fsimage size 2083 bytes.
+2013-10-05 17:03:38,908 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://0.0.0.0:50070/getimage?getedit=1
+2013-10-05 17:03:38,911 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Downloaded file edits size 1178 bytes.
+2013-10-05 17:03:38,914 INFO org.apache.hadoop.hdfs.util.GSet: Computing capacity for map BlocksMap
+2013-10-05 17:03:38,914 INFO org.apache.hadoop.hdfs.util.GSet: VM type       = 64-bit
+2013-10-05 17:03:38,914 INFO org.apache.hadoop.hdfs.util.GSet: 2.0% max memory = 2088435712
+2013-10-05 17:03:38,914 INFO org.apache.hadoop.hdfs.util.GSet: capacity      = 2^22 = 4194304 entries
+2013-10-05 17:03:38,914 INFO org.apache.hadoop.hdfs.util.GSet: recommended=4194304, actual=4194304
+2013-10-05 17:03:38,948 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: fsOwner=rushil_345
+2013-10-05 17:03:38,948 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: supergroup=supergroup
+2013-10-05 17:03:38,948 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isPermissionEnabled=true
+2013-10-05 17:03:38,958 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.block.invalidate.limit=100
+2013-10-05 17:03:38,958 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isAccessTokenEnabled=false accessKeyUpdateInterval=0 min(s), accessTokenLifetime=0 min(s)
+2013-10-05 17:03:39,005 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: dfs.namenode.edits.toleration.length = -1
+2013-10-05 17:03:39,005 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: Caching file names occuring more than 10 times 
+2013-10-05 17:03:39,255 INFO org.apache.hadoop.hdfs.server.common.Storage: Number of files = 15
+2013-10-05 17:03:39,262 INFO org.apache.hadoop.hdfs.server.common.Storage: Number of files under construction = 0
+2013-10-05 17:03:39,262 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Start loading edits file /Users/rushil_345/Desktop/hadoop-rushil_345/dfs/namesecondary/current/edits
+2013-10-05 17:03:39,272 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: EOF of /Users/rushil_345/Desktop/hadoop-rushil_345/dfs/namesecondary/current/edits, reached end of edit log Number of transactions found: 12.  Bytes read: 1178
+2013-10-05 17:03:39,273 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Edits file /Users/rushil_345/Desktop/hadoop-rushil_345/dfs/namesecondary/current/edits of size 1178 edits # 12 loaded in 0 seconds.
+2013-10-05 17:03:39,273 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 0 Total time for transactions(ms): 0 Number of transactions batched in Syncs: 0 Number of syncs: 0 SyncTimes(ms): 0 
+2013-10-05 17:03:39,275 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: closing edit log: position=1178, editlog=/Users/rushil_345/Desktop/hadoop-rushil_345/dfs/namesecondary/current/edits
+2013-10-05 17:03:39,277 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: close success: truncate to 1178, editlog=/Users/rushil_345/Desktop/hadoop-rushil_345/dfs/namesecondary/current/edits
+2013-10-05 17:03:39,279 INFO org.apache.hadoop.hdfs.server.common.Storage: Image file /Users/rushil_345/Desktop/hadoop-rushil_345/dfs/namesecondary/current/fsimage of size 1882 bytes saved in 0 seconds.
+2013-10-05 17:03:39,320 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: closing edit log: position=4, editlog=/Users/rushil_345/Desktop/hadoop-rushil_345/dfs/namesecondary/current/edits
+2013-10-05 17:03:39,321 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: close success: truncate to 4, editlog=/Users/rushil_345/Desktop/hadoop-rushil_345/dfs/namesecondary/current/edits
+2013-10-05 17:03:39,375 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Posted URL 0.0.0.0:50070putimage=1&port=50090&machine=0.0.0.0&token=-41:1707250613:0:1381007018000:1381006715620&newChecksum=ee138c33b579fea0b2c10bf3dc752796
+2013-10-05 17:03:39,375 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://0.0.0.0:50070/getimage?putimage=1&port=50090&machine=0.0.0.0&token=-41:1707250613:0:1381007018000:1381006715620&newChecksum=ee138c33b579fea0b2c10bf3dc752796
+2013-10-05 17:03:39,509 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Checkpoint done. New Image Size: 1882
+2013-10-05 17:05:33,120 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down SecondaryNameNode at Rushils-MacBook-Pro.local/192.168.1.105
+************************************************************/
+2013-10-05 17:07:12,728 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting SecondaryNameNode
+STARTUP_MSG:   host = Rushils-MacBook-Pro.local/192.168.1.105
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 1.2.1
+STARTUP_MSG:   build = https://svn.apache.org/repos/asf/hadoop/common/branches/branch-1.2 -r 1503152; compiled by 'mattf' on Mon Jul 22 15:23:09 PDT 2013
+STARTUP_MSG:   java = 1.6.0_51
+************************************************************/
+2013-10-05 17:07:12,881 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: dfs.namenode.edits.toleration.length is set to 0.  Override it with -1, i.e. disable it.
+2013-10-05 17:07:13,607 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2013-10-05 17:07:13,680 INFO org.apache.hadoop.http.HttpServer: Added global filtersafety (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
+2013-10-05 17:07:13,685 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50090
+2013-10-05 17:07:13,698 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50090 webServer.getConnectors()[0].getLocalPort() returned 50090
+2013-10-05 17:07:13,698 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50090
+2013-10-05 17:07:13,699 INFO org.mortbay.log: jetty-6.1.26
+2013-10-05 17:07:14,272 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50090
+2013-10-05 17:07:14,273 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Web server init done
+2013-10-05 17:07:14,273 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Secondary Web-server up at: 0.0.0.0:50090
+2013-10-05 17:07:14,273 WARN org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Checkpoint Period   :3600 secs (60 min)
+2013-10-05 17:07:14,273 WARN org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Log Size Trigger    :67108864 bytes (65536 KB)
+2013-10-05 17:12:14,330 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://0.0.0.0:50070/getimage?getimage=1
+2013-10-05 17:12:14,482 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Downloaded file fsimage size 1882 bytes.
+2013-10-05 17:12:14,482 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://0.0.0.0:50070/getimage?getedit=1
+2013-10-05 17:12:14,484 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Downloaded file edits size 1135 bytes.
+2013-10-05 17:12:14,486 INFO org.apache.hadoop.hdfs.util.GSet: Computing capacity for map BlocksMap
+2013-10-05 17:12:14,487 INFO org.apache.hadoop.hdfs.util.GSet: VM type       = 64-bit
+2013-10-05 17:12:14,487 INFO org.apache.hadoop.hdfs.util.GSet: 2.0% max memory = 2088435712
+2013-10-05 17:12:14,487 INFO org.apache.hadoop.hdfs.util.GSet: capacity      = 2^22 = 4194304 entries
+2013-10-05 17:12:14,487 INFO org.apache.hadoop.hdfs.util.GSet: recommended=4194304, actual=4194304
+2013-10-05 17:12:14,509 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: fsOwner=rushil_345
+2013-10-05 17:12:14,509 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: supergroup=supergroup
+2013-10-05 17:12:14,509 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isPermissionEnabled=true
+2013-10-05 17:12:14,514 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.block.invalidate.limit=100
+2013-10-05 17:12:14,514 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isAccessTokenEnabled=false accessKeyUpdateInterval=0 min(s), accessTokenLifetime=0 min(s)
+2013-10-05 17:12:14,551 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: dfs.namenode.edits.toleration.length = -1
+2013-10-05 17:12:14,551 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: Caching file names occuring more than 10 times 
+2013-10-05 17:12:14,736 INFO org.apache.hadoop.hdfs.server.common.Storage: Number of files = 13
+2013-10-05 17:12:14,741 INFO org.apache.hadoop.hdfs.server.common.Storage: Number of files under construction = 0
+2013-10-05 17:12:14,741 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Start loading edits file /Users/rushil_345/Desktop/hadoop-rushil_345/dfs/namesecondary/current/edits
+2013-10-05 17:12:14,748 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: EOF of /Users/rushil_345/Desktop/hadoop-rushil_345/dfs/namesecondary/current/edits, reached end of edit log Number of transactions found: 11.  Bytes read: 1135
+2013-10-05 17:12:14,748 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Edits file /Users/rushil_345/Desktop/hadoop-rushil_345/dfs/namesecondary/current/edits of size 1135 edits # 11 loaded in 0 seconds.
+2013-10-05 17:12:14,748 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 0 Total time for transactions(ms): 0 Number of transactions batched in Syncs: 0 Number of syncs: 0 SyncTimes(ms): 0 
+2013-10-05 17:12:14,749 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: closing edit log: position=1135, editlog=/Users/rushil_345/Desktop/hadoop-rushil_345/dfs/namesecondary/current/edits
+2013-10-05 17:12:14,750 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: close success: truncate to 1135, editlog=/Users/rushil_345/Desktop/hadoop-rushil_345/dfs/namesecondary/current/edits
+2013-10-05 17:12:14,751 INFO org.apache.hadoop.hdfs.server.common.Storage: Image file /Users/rushil_345/Desktop/hadoop-rushil_345/dfs/namesecondary/current/fsimage of size 1882 bytes saved in 0 seconds.
+2013-10-05 17:12:14,757 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: closing edit log: position=4, editlog=/Users/rushil_345/Desktop/hadoop-rushil_345/dfs/namesecondary/current/edits
+2013-10-05 17:12:14,757 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: close success: truncate to 4, editlog=/Users/rushil_345/Desktop/hadoop-rushil_345/dfs/namesecondary/current/edits
+2013-10-05 17:12:14,764 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Posted URL 0.0.0.0:50070putimage=1&port=50090&machine=0.0.0.0&token=-41:1707250613:0:1381007534000:1381007230445&newChecksum=6e79296601ba0422e130d514cec41fdf
+2013-10-05 17:12:14,764 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://0.0.0.0:50070/getimage?putimage=1&port=50090&machine=0.0.0.0&token=-41:1707250613:0:1381007534000:1381007230445&newChecksum=6e79296601ba0422e130d514cec41fdf
+2013-10-05 17:12:14,846 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Checkpoint done. New Image Size: 1882
+2013-10-05 17:20:49,662 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down SecondaryNameNode at Rushils-MacBook-Pro.local/192.168.1.105
+************************************************************/

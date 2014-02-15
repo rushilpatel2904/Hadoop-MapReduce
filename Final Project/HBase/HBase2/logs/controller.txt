@@ -1,0 +1,6 @@
+2013-12-09T18:56:35.803Z INFO Fetching jar file.
+2013-12-09T18:56:45.633Z INFO Working dir /mnt/var/lib/hadoop/steps/3
+2013-12-09T18:56:45.633Z INFO Executing /usr/java/latest/bin/java -cp /home/hadoop/conf:/usr/java/latest/lib/tools.jar:/home/hadoop:/home/hadoop/hadoop-tools.jar:/home/hadoop/hadoop-tools-1.0.3.jar:/home/hadoop/hadoop-core-1.0.3.jar:/home/hadoop/hadoop-core.jar:/home/hadoop/lib/*:/home/hadoop/lib/jetty-ext/* -Xmx1000m -Dhadoop.log.dir=/mnt/var/log/hadoop/steps/3 -Dhadoop.log.file=syslog -Dhadoop.home.dir=/home/hadoop -Dhadoop.id.str=hadoop -Dhadoop.root.logger=INFO,DRFA -Djava.io.tmpdir=/mnt/var/lib/hadoop/steps/3/tmp -Djava.library.path=/home/hadoop/native/Linux-amd64-64 org.apache.hadoop.util.RunJar /mnt/var/lib/hadoop/steps/3/HBaseFinal2.jar s3n://flights-project/data.csv s3n://flights-project/HBase2Output
+2013-12-09T19:06:03.270Z INFO Execution ended with ret val 0
+2013-12-09T19:06:05.776Z INFO Step created jobs: job_201312091855_0001
+2013-12-09T19:06:08.281Z INFO Step succeeded
